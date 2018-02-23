@@ -1,0 +1,54 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Ananda Namaste';
+    font-weight: bold;
+    src: url('../fonts/Ananda_Namaste.ttf');
+}
+
+.mdl-layout__header {
+    background: #212121
+}
+
+h1.ttile {
+    position: absolute;
+    top: 50%;
+    text-align: center
+}
+
+.android-slogan {
+    font-family: 'Ananda Namaste';
+    color: #212121;
+    font-size: 9.2rem;
+    text-shadow: 1px 1px 1px #444444;
+}
+
+.header-back {
+    background-image: linear-gradient( 45deg, #2979ff, #2979ff 50%, #ffffff 50%, #ffffff 85%, #212121 85%);
+    /* background: linear-gradient(to bottom right, #7c4dff, #7c4dff 30%, #7c4dff 30%, #FFFFFF 30%, #ffffff 33%); */
+}
+
+.scrollbar-track-y {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%
+}
+
+.scrollbar-track-x {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0
+}
+
+.scrollbar-track:hover {
+    background: hsla(0, 0%, 87%, 0)
+}
+
+.scrollbar-track:hover {
+    opacity: 1
+}
