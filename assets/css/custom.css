@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,900);
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -9,27 +10,37 @@
     src: url('../fonts/Ananda_Namaste.ttf');
 }
 
+body {
+    font-family: Roboto;
+}
+
 .mdl-layout__header {
     background: #212121
 }
 
 h1.ttile {
     position: absolute;
-    top: 50%;
     text-align: center
 }
 
 .android-slogan {
     font-family: 'Ananda Namaste';
     color: #212121;
-    font-size: 9.2rem;
-    text-shadow: 1px 1px 1px #444444;
+    top: 60%;
+    font-size: 9.8rem;
+    text-shadow: 1px .8px .9px #444444;
 }
 
 .header-back {
-    background-image: linear-gradient( 45deg, #2979ff, #2979ff 50%, #ffffff 50%, #ffffff 85%, #212121 85%);
+    background-image: linear-gradient( 45deg, #2979ff, #2979ff 49%, #ffffff 49%, #ffffff 85%, #212121 85%);
     /* background: linear-gradient(to bottom right, #7c4dff, #7c4dff 30%, #7c4dff 30%, #FFFFFF 30%, #ffffff 33%); */
-    height: 640px;
+}
+
+.header-back .sub-logo {
+    margin-top: 42px;
+    font-size: 1.6rem;
+    color: #313131;
+    text-shadow: .5px .3px .3px #444444
 }
 
 [data-scrollbar],
@@ -97,7 +108,7 @@ scrollbar .scrollbar-track-x {
 scrollbar .scrollbar-track-y {
     top: 0;
     right: 0;
-    width: 2px;
+    width: 2.8px;
     height: 100%
 }
 
@@ -107,9 +118,9 @@ scrollbar .scrollbar-thumb {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2px;
+    width: 3px;
     height: 2px;
-    background: #444444
+    background: #340043;
 }
 
 [data-scrollbar] .overscroll-glow,
@@ -119,5 +130,5 @@ scrollbar .overscroll-glow {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
