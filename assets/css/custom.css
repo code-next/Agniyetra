@@ -28,7 +28,7 @@ h1.ttile {
 
 .android-slogan {
     font-family: 'Ananda Namaste';
-    color: #212121;
+    color: #444444;
     top: 20%;
     font-size: 9.8rem;
     text-shadow: 1px .8px .9px #444444;
@@ -38,19 +38,11 @@ h1.ttile {
 }
 
 
-/* .header-back { */
-
-
-/* background-image: linear-gradient( 45deg, #2962FF, #2962FF 40%, #ffffff 40%, #ffffff 85%, #212121 85%); */
-
-
-/* background: linear-gradient(to bottom right, #7c4dff, #7c4dff 30%, #7c4dff 30%, #FFFFFF 30%, #ffffff 33%); */
-
-
-/* background-repeat: no-repeat; */
-
-
-/* } */
+/* .header-back {
+    background-image: linear-gradient( 45deg, #2962FF, #2962FF 40%, #ffffff 40%, #ffffff 85%, #212121 85%);
+    background: linear-gradient(to bottom right, #7c4dff, #7c4dff 30%, #7c4dff 30%, #FFFFFF 30%, #ffffff 33%);
+    background-repeat: no-repeat;
+} */
 
 .header-back .sub-logo {
     margin-top: 42px;
@@ -155,3 +147,6 @@ scrollbar .overscroll-glow {
     width: 600px!important;
     height:718;
 } */
+
+
+/* Fire */

@@ -87,7 +87,7 @@ IOWA.CountdownTimer.Band.prototype.fade = function(t) {
 };
 IOWA.CountdownTimer.Band.prototype.onChangeComplete = function(t) {
     t.fadeTimer = setTimeout(function() {
-      //  t.fade("out")
+        //  t.fade("out")
     }, 100000 + 1e3 * Math.random())
 };
 IOWA.CountdownTimer.Band.prototype.setQuality = function(t) {
@@ -145,7 +145,7 @@ IOWA.CountdownTimer.Band.prototype.renderFlat = function() {
 IOWA.CountdownTimer.Band.prototype.stopPlaying = function() {
     this.renderFlat(), this.isPlaying = !1
 };
-IOWA.CountdownTimer.INTRO_PAUSE = 300;
+IOWA.CountdownTimer.INTRO_PAUSE = 700;
 IOWA.CountdownTimer.INTRO_LENGTH = 1800;
 IOWA.CountdownTimer.Intro = function(t, e, i) {
     this.parent = i, this.radius = 0, this.center = {
@@ -188,17 +188,12 @@ IOWA.CountdownTimer.Intro.prototype.update = function() {
     this.isStarted && (this.count += (this.radius - this.parent.strokeWeight - this.count) / this.speed);
     var t = this.canvasElement.getContext("2d"),
         e = "horizontal" === this.parent.format ? 1 : 5;
-    if (this.count > this.radius - this.parent.strokeWeight - .05) this.firstRun && (this.parent.bands[e].aShift *= -1, this.parent.bands[e].colors[0].hex = "#38003c", this.parent.bands[e].oldShape = 0, this.parent.bands[e].currentShape = 0, this.parent.bands[e].isPlaying = !0, this.parent.bands[e].fade("in"), this.firstRun = !1, setTimeout(this.outro.bind(this), IOWA.CountdownTimer.INTRO_LENGTH)), this.parent.bands[e].update();
-    else {
-        t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio), t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, this.radius, 0, 2 * Math.PI, !1), t.fillStyle = "#2979ff", t.fill();
-        var i = this.count;
-        t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, i, 0, 2 * Math.PI, !1), t.fillStyle = "#2979ff", t.fill(), t.restore()
-    }
+    if (this.count > this.radius - this.parent.strokeWeight - .05) this.firstRun && (this.parent.bands[e].aShift *= 1, this.parent.bands[e].colors[0].hex = "#38003c", this.parent.bands[e].oldShape = 0, this.parent.bands[e].currentShape = 0, this.parent.bands[e].isPlaying = !0, this.parent.bands[e].fade("in"), this.firstRun = !1, setTimeout(this.outro.bind(this), IOWA.CountdownTimer.INTRO_LENGTH)), this.parent.bands[e].update();
+    else {}
     t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio);
     for (var n = 0; n < this.rectangles.length; n++) {
         t.beginPath(), t.moveTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y);
         for (var r = 1; r < this.rectangles[n].length; r++) t.lineTo(this.rectangles[n][r].x * this.radius + this.center.x, this.rectangles[n][r].y * this.radius + this.center.y);
-        t.lineTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y), t.fillStyle = "#2979ff", t.fill()
     }
     return t.restore(), !1
 };
@@ -353,7 +348,7 @@ IOWA.CountdownTimer.Core.prototype.getBandCenter = function(t) {
 IOWA.CountdownTimer.Core.prototype.addUnits = function() {
     var t = "horizontal" === this.format ? 42 : 32,
         e = this.canvasElement.getContext("2d");
-    e.save(), e.scale(this.pixelRatio, this.pixelRatio), e.font = "500 12px Roboto", e.fillStyle = "#38003c", e.textAlign = "center", e.fillText("Days", this.bands[0].center.x + this.layout.radius + this.bandPadding / 2, this.bands[0].center.y + this.layout.radius + t), e.fillText("Hours", this.bands[2].center.x + this.layout.radius + this.bandPadding / 2, this.bands[2].center.y + this.layout.radius + t), e.fillText("Minutes", this.bands[4].center.x + this.layout.radius + this.bandPadding / 2, this.bands[4].center.y + this.layout.radius + t), e.fillText("Seconds", this.bands[6].center.x + this.layout.radius + this.bandPadding / 2, this.bands[6].center.y + this.layout.radius + t), e.restore()
+    e.save(), e.scale(this.pixelRatio, this.pixelRatio), e.font = "500 12px Roboto", e.fillStyle = "#fff", e.textAlign = "center", e.fillText("Days", this.bands[0].center.x + this.layout.radius + this.bandPadding / 2, this.bands[0].center.y + this.layout.radius + t), e.fillText("Hours", this.bands[2].center.x + this.layout.radius + this.bandPadding / 2, this.bands[2].center.y + this.layout.radius + t), e.fillText("Minutes", this.bands[4].center.x + this.layout.radius + this.bandPadding / 2, this.bands[4].center.y + this.layout.radius + t), e.fillText("Seconds", this.bands[6].center.x + this.layout.radius + this.bandPadding / 2, this.bands[6].center.y + this.layout.radius + t), e.restore()
 };
 IOWA.CountdownTimer.Core.prototype.addSeparators = function() {
     var t = this.canvasElement.getContext("2d");
