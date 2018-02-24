@@ -133,7 +133,3 @@ scrollbar .overscroll-glow {
     height: 100%;
 }
 
-#countdown-container>countdown-timer>svg>canvas{
-    width: auto;
-    height:718;
-}
