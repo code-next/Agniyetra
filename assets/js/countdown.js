@@ -312,7 +312,10 @@ IOWA.CountdownTimer.Core.prototype.onMouseMove = function(t) {
     }
 };
 IOWA.CountdownTimer.Core.prototype.handleMouseShudder = function() {
-    for (var t = this.mouseCoords.x, e = this.mouseCoords.y, i = 0; i < this.bands.length; i++) t > this.bands[i].center.x - this.bands[i].radius && t < this.bands[i].center.x + this.bands[i].radius && e > this.bands[i].center.y - this.bands[i].radius && e < this.bands[i].center.y + this.bands[i].radius ? this.bands[i].shudder(!0) : this.bands[i].shudder(!1);
+    for (var t = this.mouseCoords.x, e = this.mouseCoords.y, i = 0; i < this.bands.length; i++)
+        t > this.bands[i].center.x - this.bands[i].radius && t < this.bands[i].center.x + this.bands[i].radius && e >
+        this.bands[i].center.y - this.bands[i].radius && e < this.bands[i].center.y + this.bands[i].radius ?
+        this.bands[i].shudder(!0) : this.bands[i].shudder(!0);
     this.mouseCoords = null
 };
 IOWA.CountdownTimer.Core.prototype.getFormat = function() {
