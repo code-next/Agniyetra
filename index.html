@@ -45,12 +45,11 @@
         </header>
 
         <main class="mdl-layout__content">
-            <div class="page-content" style="z-index:0">
+            <div class="page-content" style="z-index:-1">
                 <!-- Your content goes here -->
-
-                <div class="header-back">
-                    <div style="width: 1000px; height: 500px; z-index:-1; position: absolute" id="hello" data-vide-bg="ocean" data-vide-options="loop: false, muted: false, position: 0% 0%">
-                    </div>
+                <div style="width: 100%; height: 600px; z-index:-1; position: absolute" id="hello" data-vide-bg="video/ocean" data-vide-options="loop: true, muted: false, position: 0% 0%">
+                </div>
+                <div class="android-be-together-section mdl-typography--text-center header-back">
                     <div class="logo-font android-slogan">Agniyetra '18</div>
                     <div class="logo-font sub-logo">National Techno Cultural Fest</div>
                     <div id="countdown-container" style="width: 80%;margin: -100px auto;max-width: 1160px;">
@@ -249,18 +248,15 @@
 
     <script src="./assets/js/smooth-scrollbar.js "></script>
     <script src="./assets/js/TweenMax.js "></script>
+    <script src="./assets/js/countdown.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script src="./assets/js/jquery.vide.js "></script>
-    <script>
-        $('#hello').vide('./Notebook_Rainbow');
-    </script>
+
 
     <script>
         var Scrollbar = window.Scrollbar;
         var scrollbars = Scrollbar.init(document.querySelector('.mdl-layout__content'));
     </script>
-
-    <script src="./assets/js/countdown.js "></script>
     <script>
         var countDown = new IOWA.CountdownTimer.Core(
             new Date(2018, 02, 08),
