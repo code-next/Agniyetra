@@ -5,21 +5,21 @@ IOWA.CountdownTimer.Band = function(t, e, i, n, r) {
         x: 0,
         y: 0
     }, this.quality = e, this.isPlaying = !0, this.needsRedraw = !0, this.colors = [{
-        hex: "#ffffff",
+        hex: "#e90052",
         ratio: 1,
         size: 1,
         oldSize: 1,
         active: !1,
         tween: null
     }, {
-        hex: "#EF5350",
+        hex: "#00ff85",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#5C6BC0",
+        hex: "#e90052",
         ratio: 0,
         size: 0,
         oldSize: 0,
@@ -190,15 +190,15 @@ IOWA.CountdownTimer.Intro.prototype.update = function() {
         e = "horizontal" === this.parent.format ? 1 : 5;
     if (this.count > this.radius - this.parent.strokeWeight - .05) this.firstRun && (this.parent.bands[e].aShift *= -1, this.parent.bands[e].colors[0].hex = "#38003c", this.parent.bands[e].oldShape = 0, this.parent.bands[e].currentShape = 0, this.parent.bands[e].isPlaying = !0, this.parent.bands[e].fade("in"), this.firstRun = !1, setTimeout(this.outro.bind(this), IOWA.CountdownTimer.INTRO_LENGTH)), this.parent.bands[e].update();
     else {
-        t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio), t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, this.radius, 0, 2 * Math.PI, !1), t.fillStyle = "#2979ff", t.fill();
+        t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio), t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, this.radius, 0, 2 * Math.PI, !1), t.fillStyle = "#00ff85", t.fill();
         var i = this.count;
-        t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, i, 0, 2 * Math.PI, !1), t.fillStyle = "#2979ff", t.fill(), t.restore()
+        t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, i, 0, 2 * Math.PI, !1), t.fillStyle = "#00ff85", t.fill(), t.restore()
     }
     t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio);
     for (var n = 0; n < this.rectangles.length; n++) {
         t.beginPath(), t.moveTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y);
         for (var r = 1; r < this.rectangles[n].length; r++) t.lineTo(this.rectangles[n][r].x * this.radius + this.center.x, this.rectangles[n][r].y * this.radius + this.center.y);
-        t.lineTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y), t.fillStyle = "#2979ff", t.fill()
+        t.lineTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y), t.fillStyle = "#00ff85", t.fill()
     }
     return t.restore(), !1
 };
