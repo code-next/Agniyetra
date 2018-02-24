@@ -145,7 +145,7 @@ IOWA.CountdownTimer.Band.prototype.renderFlat = function() {
 IOWA.CountdownTimer.Band.prototype.stopPlaying = function() {
     this.renderFlat(), this.isPlaying = !1
 };
-IOWA.CountdownTimer.INTRO_PAUSE = 700;
+IOWA.CountdownTimer.INTRO_PAUSE = 500;
 IOWA.CountdownTimer.INTRO_LENGTH = 1800;
 IOWA.CountdownTimer.Intro = function(t, e, i) {
     this.parent = i, this.radius = 0, this.center = {
@@ -189,11 +189,16 @@ IOWA.CountdownTimer.Intro.prototype.update = function() {
     var t = this.canvasElement.getContext("2d"),
         e = "horizontal" === this.parent.format ? 1 : 5;
     if (this.count > this.radius - this.parent.strokeWeight - .05) this.firstRun && (this.parent.bands[e].aShift *= 1, this.parent.bands[e].colors[0].hex = "#38003c", this.parent.bands[e].oldShape = 0, this.parent.bands[e].currentShape = 0, this.parent.bands[e].isPlaying = !0, this.parent.bands[e].fade("in"), this.firstRun = !1, setTimeout(this.outro.bind(this), IOWA.CountdownTimer.INTRO_LENGTH)), this.parent.bands[e].update();
-    else {}
+    else {
+        //     t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio), t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, this.radius, 0, 2 * Math.PI, !1), t.fillStyle = "#fff", t.fill();
+        //     var i = this.count;
+        //     t.beginPath(), t.arc(this.circle.x + this.center.x, this.circle.y + this.center.y, i, 0, 2 * Math.PI, !1), t.fillStyle = "#eee", t.fill(), t.restore()
+    }
     t.save(), t.scale(this.parent.pixelRatio, this.parent.pixelRatio);
     for (var n = 0; n < this.rectangles.length; n++) {
         t.beginPath(), t.moveTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y);
         for (var r = 1; r < this.rectangles[n].length; r++) t.lineTo(this.rectangles[n][r].x * this.radius + this.center.x, this.rectangles[n][r].y * this.radius + this.center.y);
+        //  t.lineTo(this.rectangles[n][0].x * this.radius + this.center.x, this.rectangles[n][0].y * this.radius + this.center.y), t.fillStyle = "#fff", t.fill()
     }
     return t.restore(), !1
 };
