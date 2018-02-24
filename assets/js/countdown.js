@@ -5,21 +5,21 @@ IOWA.CountdownTimer.Band = function(t, e, i, n, r) {
         x: 0,
         y: 0
     }, this.quality = e, this.isPlaying = !0, this.needsRedraw = !0, this.colors = [{
-        hex: "#ffffff",
+        hex: "#FF5722",
         ratio: 1,
         size: 1,
         oldSize: 1,
         active: !1,
         tween: null
     }, {
-        hex: "#EF5350",
+        hex: "#FFD600",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#5C6BC0",
+        hex: "#00E676",
         ratio: 0,
         size: 0,
         oldSize: 0,
@@ -33,14 +33,14 @@ IOWA.CountdownTimer.Band = function(t, e, i, n, r) {
         active: !1,
         tween: null
     }, {
-        hex: "#8cf2f2",
+        hex: "#F50057",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#38003c",
+        hex: "#212121",
         ratio: 0,
         size: 0,
         oldSize: 0,
@@ -140,7 +140,7 @@ IOWA.CountdownTimer.Band.prototype.redraw = function() {
     this.needsRedraw = !0
 };
 IOWA.CountdownTimer.Band.prototype.renderFlat = function() {
-    this.colors[0].size = 0, this.colors[1].size = 0, this.colors[2].size = 0, this.colors[3].size = 0, this.colors[4].size = 0, this.colors[5].size = 1, this.needsRedraw = !0
+    //this.colors[0].size = 0, this.colors[1].size = 0, this.colors[2].size = 0, this.colors[3].size = 0, this.colors[4].size = 0, this.colors[5].size = 1, this.needsRedraw = !0
 };
 IOWA.CountdownTimer.Band.prototype.stopPlaying = function() {
     this.renderFlat(), this.isPlaying = !1

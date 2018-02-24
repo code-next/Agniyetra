@@ -12,7 +12,7 @@
 }
 
 .mdl-layout__header {
-    background: #313131
+    background: #212121
 }
 
 h1.ttile {
@@ -23,14 +23,19 @@ h1.ttile {
 .android-slogan {
     font-family: 'Ananda Namaste';
     color: #212121;
-    top: 60%;
+    top: 20%;
     font-size: 9.8rem;
     text-shadow: 1px .8px .9px #444444;
+    /* border: 2px solid transparent;
+    border-image: linear-gradient(to right, #f0f 0%,#f0f 61%, #3acfd5 61%, #fff, #3acfd5 63%, #0ff,  63%, #0ff 100%);
+    border-image-slice: 1; */
 }
 
 .header-back {
-    background-image: linear-gradient( 45deg, #7c4ddf, #7c4ddf 46%, #ffffff 46%, #ffffff 85%, #ff1744 85%);
+    background-image: linear-gradient( 35deg, #2962FF, #2962FF 38%, #ffffff 38%, #ffffff 85%, #212121 85%);
     /* background: linear-gradient(to bottom right, #7c4dff, #7c4dff 30%, #7c4dff 30%, #FFFFFF 30%, #ffffff 33%); */
+
+background-repeat: no-repeat;
 }
 
 .header-back .sub-logo {
