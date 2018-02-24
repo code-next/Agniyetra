@@ -87,8 +87,8 @@ IOWA.CountdownTimer.Band.prototype.fade = function(t) {
 };
 IOWA.CountdownTimer.Band.prototype.onChangeComplete = function(t) {
     t.fadeTimer = setTimeout(function() {
-        t.fade("out")
-    }, 500 + 1e3 * Math.random())
+      //  t.fade("out")
+    }, 100000 + 1e3 * Math.random())
 };
 IOWA.CountdownTimer.Band.prototype.setQuality = function(t) {
     this.quality = t, this.needsRedraw = !0
@@ -133,7 +133,7 @@ IOWA.CountdownTimer.Band.prototype.shudder = function(t) {
         var e = this;
         this.fadeTimer = setTimeout(function() {
             e.fade("out")
-        }, 500 + 1e3 * Math.random()), this.isShuddering = !1
+        }, 10000 + 1e3 * Math.random()), this.isShuddering = !1
     }
 };
 IOWA.CountdownTimer.Band.prototype.redraw = function() {
@@ -145,8 +145,8 @@ IOWA.CountdownTimer.Band.prototype.renderFlat = function() {
 IOWA.CountdownTimer.Band.prototype.stopPlaying = function() {
     this.renderFlat(), this.isPlaying = !1
 };
-IOWA.CountdownTimer.INTRO_PAUSE = 500;
-IOWA.CountdownTimer.INTRO_LENGTH = 1500;
+IOWA.CountdownTimer.INTRO_PAUSE = 300;
+IOWA.CountdownTimer.INTRO_LENGTH = 1800;
 IOWA.CountdownTimer.Intro = function(t, e, i) {
     this.parent = i, this.radius = 0, this.center = {
         x: 0,
@@ -315,7 +315,7 @@ IOWA.CountdownTimer.Core.prototype.handleMouseShudder = function() {
     for (var t = this.mouseCoords.x, e = this.mouseCoords.y, i = 0; i < this.bands.length; i++)
         t > this.bands[i].center.x - this.bands[i].radius && t < this.bands[i].center.x + this.bands[i].radius && e >
         this.bands[i].center.y - this.bands[i].radius && e < this.bands[i].center.y + this.bands[i].radius ?
-        this.bands[i].shudder(!0) : this.bands[i].shudder(!0);
+        this.bands[i].shudder(!0) : this.bands[i].shudder(!1);
     this.mouseCoords = null
 };
 IOWA.CountdownTimer.Core.prototype.getFormat = function() {
