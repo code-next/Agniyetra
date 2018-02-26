@@ -5,35 +5,35 @@ IOWA.CountdownTimer.Band = function(t, e, i, n, r) {
         x: 0,
         y: 0
     }, this.quality = e, this.isPlaying = !0, this.needsRedraw = !0, this.colors = [{
-        hex: "#FF5722",
+        hex: "#fdcf58",
         ratio: 1,
         size: 1,
         oldSize: 1,
         active: !1,
         tween: null
     }, {
-        hex: "#FFD600",
+        hex: "#757676",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#00E676",
+        hex: "#f27d0c",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#26C6DA",
+        hex: "#800909",
         ratio: 0,
         size: 0,
         oldSize: 0,
         active: !1,
         tween: null
     }, {
-        hex: "#F50057",
+        hex: "#f07f13",
         ratio: 0,
         size: 0,
         oldSize: 0,

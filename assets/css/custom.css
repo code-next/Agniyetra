@@ -12,7 +12,7 @@
 }
 
 .mdl-layout__header {
-    background: #212121;
+    background: #000000;
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
@@ -28,10 +28,10 @@ h1.ttile {
 
 .android-slogan {
     font-family: 'Ananda Namaste';
-    color: #444444;
+    color: #ffffff;
     top: 50%;
-    font-size: 9.8rem;
-    text-shadow: 1px .8px .9px #444444;
+    font-size: 12rem;
+    text-shadow: 1.6px 1.4px 1.5px #DD2C00;
     /* border: 2px solid transparent;
     border-image: linear-gradient(to right, #f0f 0%,#f0f 61%, #3acfd5 61%, #fff, #3acfd5 63%, #0ff,  63%, #0ff 100%);
     border-image-slice: 1; */
@@ -54,10 +54,10 @@ h1.ttile {
 
 .header-back .sub-logo {
     margin-top: 42px;
-    font-size: 2.1rem;
-    color: #212121;
+    font-size: 2rem;
+    color: #fdfdfd;
     text-shadow: .5px .3px .3px #444444;
-    font-family: Bellefair;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header-back {
@@ -169,3 +169,35 @@ scrollbar .overscroll-glow {
     padding: 30px;
     margin: 30px;
 }
+
+.nav-bar-links{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* .header-vid-back{
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    filter: blur(0.5px);
+} */
+
+
+
+
+@-webkit-keyframes arrow-jump {
+    0%   { opacity: 0;}
+    100% { opacity: 1; 
+          -webkit-transform: translateY(10px);
+          -moz-transform: translateY(10px);
+          -0-transform: translateY(10px);
+          transform: translateY(10px);
+      }
+    
+  }
+  #arrow {
+    -webkit-animation: arrow-jump 1s infinite; /* Safari 4+ */
+    -moz-animation:    arrow-jump 1s infinite; /* Fx 5+ */
+    -o-animation:      arrow-jump 1s infinite; /* Opera 12+ */
+    animation:         arrow-jump 1s infinite; /* IE 10+, Fx 29+ */
+    margin-top: 70px;
+  }
