@@ -3973,11 +3973,6 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__box-outline {
     padding: 60px 0
 }
 
-.section.section--content {
-    padding: 20px;
-    margin: 20px;
-}
-
 .section--pre-footer .section__block {
     display: block;
     margin: 0 auto;

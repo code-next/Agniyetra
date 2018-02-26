@@ -1,0 +1,165 @@
+<section class="section section--content section--infocus" aria-label="in focus">
+                    <div class="mdl-grid rw-card-grid fixed-width">
+
+                        <div class="mdl-cell mdl-cell--6-col infocus-img-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile">
+                            <div class="rw-card rw-card--media rw-card--media-full mdl-card mdl-shadow--4dp">
+                                <div class="rw-card__img-container bg-img-clickable" data-img="" alt="It’s time to structure flexibility " data-href="" style="background-image: url('./assets/image/project.jpg');">
+                                </div>
+                                <div class="rw-card__content">
+                                    <h2 class="rw-card__title" style="margin-top: -10px;">
+                                        <a href="#">Inter College Project Presentation </a>
+                                    </h2>
+                                    <div class="rw-card__body" style="margin-top:-10px;">
+                                        <a href="#">
+                                            Light up the enigneer inside you. .Come and Become the part of the 5th Inter College Presentation hosted by Computer Science and Engineering department of SNGIST.     
+                                        </a>
+                                    </div>
+                                    <div class="rw-card__actions">
+                                        <span class="rw-card__meta rw-card__meta--guide">
+                                            <i class="material-icons">library_books</i> Guide
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col infocus-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile">
+                            <div class="rw-card rw-card--media mdl-card mdl-shadow--4dp">
+                                <div class="rw-card__img-container bg-img-clickable" data-img="" alt="Whisper courses: on-the-job microlearning with email" data-href="" style="background-image: url();">
+                                </div>
+                                <div class="rw-card__content">
+                                    <h2 class="rw-card__title">
+                                        <a href="#">Whisper courses: on-the-job microlearning with email</a>
+                                    </h2>
+                                    <div class="rw-card__body">
+                                        <a href="#">
+                                                Make learning stick. See how Google uses bite-sized lessons to help managers build psychological ...
+                                            </a>
+                                    </div>
+                                    <div class="rw-card__actions">
+
+                                        <a href="#" class="rw-card__end mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
+                                            <i class="material-icons">arrow_forward</i>
+                                            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col infocus-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile">
+                            <div class="rw-card rw-card--media mdl-card mdl-shadow--2dp">
+                                <div class="rw-card__img-container bg-img-clickable" data-img="#" alt="Create an employee-to-employee learning program" data-href="" style="background-image: url(&quot;#&quot;);">
+                                </div>
+                                <div class="rw-card__content">
+                                    <h2 class="rw-card__title">
+                                        <a href="#">Create an employee-to-employee learning program</a>
+                                    </h2>
+                                    <div class="rw-card__body">
+                                        <a href="#">
+                                            Encouraging a learning culture empowers employees to share knowledge with one another and act mor...
+                                        </a>
+                                    </div>
+                                    <div class="rw-card__actions">
+                                        <span class="rw-card__meta rw-card__meta--guide">
+                                            <i class="material-icons">library_books</i> Guide
+                                        </span>
+                                        <a href="#" class="rw-card__end mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
+                                            <i class="material-icons">arrow_forward</i>
+                                            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col infocus-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile">
+
+
+                            <div class="rw-card rw-card--media mdl-card mdl-shadow--2dp">
+                                <div class="rw-card__img-container bg-img-clickable" data-img="#" alt="Six HR metrics anyone can start tracking" data-href="" style="background-image: url(&quot;#&quot;);">
+                                </div>
+                                <div class="rw-card__content">
+                                    <h2 class="rw-card__title">
+                                        <a href="#">Six HR metrics anyone can start tracking</a>
+                                    </h2>
+                                    <div class="rw-card__body">
+                                        <a href="#">
+                                            Measuring people-related processes is challenging. Namely, an HR software company, shares the top...
+                                        </a>
+                                    </div>
+                                    <div class="rw-card__actions">
+                                        <span class="rw-card__meta rw-card__meta--blogpost">
+            <i class="material-icons">create</i> Blog
+        </span>
+                                        <a href="#" class="rw-card__end mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " data-upgraded=",MaterialButton,MaterialRipple ">
+                                            <i class="material-icons ">arrow_forward</i>
+                                            <span class="mdl-button__ripple-container "><span class="mdl-ripple "></span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col infocus-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile ">
+
+
+                            <div class="rw-card rw-card--media mdl-card mdl-shadow--2dp ">
+                                <div class="rw-card__img-container bg-img-clickable " data-img="#" alt="Hiring, honeybees, and human
+                                            decision making " data-href="/blog/hiring-honeybees-and-human-decision-making/ " style="background-image: url(); ">
+                                </div>
+                                <div class="rw-card__content ">
+                                    <h2 class="rw-card__title ">
+                                        <a href="#">Hiring, honeybees, and human decision making</a>
+                                    </h2>
+                                    <div class="rw-card__body ">
+                                        <a href="#">
+    Taking a tip from how teachers grade a stack of tests, “chunking” job applications has been shown...
+  </a>
+                                    </div>
+                                    <div class="rw-card__actions ">
+
+                                        <a href="#" class="rw-card__end mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " data-upgraded=",MaterialButton,MaterialRipple ">
+                                            <i class="material-icons ">arrow_forward</i>
+                                            <span class="mdl-button__ripple-container "><span class="mdl-ripple "></span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--6-col infocus-img-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile ">
+
+
+                            <div class=" rw-card rw-card--media rw-card--media-full mdl-card mdl-shadow--2dp ">
+                                <div class="rw-card__img-container bg-img-clickable " data-img="#" alt="Reorienting HR around team
+                                            effectiveness " data-href="/case-studies/return-path-team-effectiveness/ " style="background-image: url(); ">
+                                </div>
+                                <div class="rw-card__content ">
+                                    <h2 class="rw-card__title ">
+                                        <a href="#">Return Path: Reorienting HR around team effectiveness</a>
+                                    </h2>
+                                    <div class="rw-card__body ">
+                                        <a href="#">
+                                            By providing teams with data and the opportunity to give and receive feedback, Return Path improved team effectiveness.
+                                        </a>
+                                    </div>
+                                    <div class="rw-card__actions ">
+                                        <span class="rw-card__meta rw-card__meta--casestudy ">
+                                            <i class="material-icons ">content_paste</i> Case Study
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </section>

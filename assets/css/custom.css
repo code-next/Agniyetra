@@ -29,7 +29,7 @@ h1.ttile {
 .android-slogan {
     font-family: 'Ananda Namaste';
     color: #444444;
-    top: 20%;
+    top: 50%;
     font-size: 9.8rem;
     text-shadow: 1px .8px .9px #444444;
     /* border: 2px solid transparent;
@@ -50,6 +50,12 @@ h1.ttile {
     color: #212121;
     text-shadow: .5px .3px .3px #444444;
     font-family: Bellefair;
+}
+
+.header-back {
+    position: absolute;
+    width: 100%;
+    top: 20%;
 }
 
 [data-scrollbar],
@@ -150,3 +156,8 @@ scrollbar .overscroll-glow {
 
 
 /* Fire */
+
+.section.section--content {
+    padding: 30px;
+    margin: 30px;
+}
