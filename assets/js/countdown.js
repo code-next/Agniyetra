@@ -353,7 +353,7 @@ IOWA.CountdownTimer.Core.prototype.getBandCenter = function(t) {
 IOWA.CountdownTimer.Core.prototype.addUnits = function() {
     var t = "horizontal" === this.format ? 42 : 32,
         e = this.canvasElement.getContext("2d");
-    e.save(), e.scale(this.pixelRatio, this.pixelRatio), e.font = "500 12px Roboto", e.fillStyle = "#fff", e.textAlign = "center", e.fillText("Days", this.bands[0].center.x + this.layout.radius + this.bandPadding / 2, this.bands[0].center.y + this.layout.radius + t), e.fillText("Hours", this.bands[2].center.x + this.layout.radius + this.bandPadding / 2, this.bands[2].center.y + this.layout.radius + t), e.fillText("Minutes", this.bands[4].center.x + this.layout.radius + this.bandPadding / 2, this.bands[4].center.y + this.layout.radius + t), e.fillText("Seconds", this.bands[6].center.x + this.layout.radius + this.bandPadding / 2, this.bands[6].center.y + this.layout.radius + t), e.restore()
+    e.save(), e.scale(this.pixelRatio, this.pixelRatio), e.font = "500 12px Roboto", e.fillStyle = "#212121", e.textAlign = "center", e.fillText("Days", this.bands[0].center.x + this.layout.radius + this.bandPadding / 2, this.bands[0].center.y + this.layout.radius + t), e.fillText("Hours", this.bands[2].center.x + this.layout.radius + this.bandPadding / 2, this.bands[2].center.y + this.layout.radius + t), e.fillText("Minutes", this.bands[4].center.x + this.layout.radius + this.bandPadding / 2, this.bands[4].center.y + this.layout.radius + t), e.fillText("Seconds", this.bands[6].center.x + this.layout.radius + this.bandPadding / 2, this.bands[6].center.y + this.layout.radius + t), e.restore()
 };
 IOWA.CountdownTimer.Core.prototype.addSeparators = function() {
     var t = this.canvasElement.getContext("2d");
