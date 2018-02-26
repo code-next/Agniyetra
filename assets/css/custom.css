@@ -42,7 +42,10 @@ h1.ttile {
     font-size: 1.2em;
     position: relative;
     margin-top: -100px;
-    ;
+    font-family: Roboto;
+    font-weight: 100;
+    color: #444444;
+    text-shadow: 0px .5px .5px #444444;
 }
 
 
@@ -64,6 +67,16 @@ h1.ttile {
     position: absolute;
     width: 100%;
     top: 20%;
+}
+
+#news {
+    height: 130px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 960px) {
+    #news {
+        height: auto;
+    }
 }
 
 [data-scrollbar],
