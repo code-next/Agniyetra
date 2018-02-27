@@ -11,27 +11,18 @@
     src: url('../fonts/Ananda_Namaste.ttf');
 }
 
-.mdl-layout__header {
-    background: #000000;
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-}
-
 h1.ttile {
     position: absolute;
     text-align: center
 }
 
-.android-slogan {
+.slogan {
     font-family: 'Ananda Namaste';
     color: #ffffff;
-    top: 50%;
-    font-size: 12rem;
-    text-shadow: 1.6px 1.4px 1.5px #DD2C00;
+    font-size: 15rem;
+    text-shadow: 1.6px 1.4px 1.5px #eff;
+    letter-spacing: normal;
+    margin-top: -50px;
     /* border: 2px solid transparent;
     border-image: linear-gradient(to right, #f0f 0%,#f0f 61%, #3acfd5 61%, #fff, #3acfd5 63%, #0ff,  63%, #0ff 100%);
     border-image-slice: 1; */
@@ -55,18 +46,20 @@ h1.ttile {
     background-repeat: no-repeat;
 } */
 
-.header-back .sub-logo {
+.sub-logo {
     margin-top: 42px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #fdfdfd;
     text-shadow: .5px .3px .3px #444444;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: none;
 }
 
 .header-back {
     position: absolute;
-    width: 100%;
-    top: 20%;
+    text-align: center;
+    top: 50%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #news {
