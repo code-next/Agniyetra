@@ -1,0 +1,144 @@
+<div class="project" style="transform: matrix(1, 0, 0, 1, 0, 0); display:one">
+    <div style="visibility: inherit; opacity: 1;">
+        <div class="smoothie sticky" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none;">
+            <article class="scroll-content" style="overflow:auto;height:560px;">
+                <div class="content" style="overflow:auto">
+                    <div class="avatar-container">
+                        <div class="image-avatar"><img src="" alt="Chris Do"></div>
+                    </div>
+                    <div class="intro">
+                        <div class="intro-content">
+                            <div class="header">
+                                <h1 class="workshop-name">Project Presentation</h1>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="middle"><span>Co-ordinated by</span>
+                                <h2>Aswin Raj</h2>
+                            </div>
+                            <div class="bottom"><strong>Thursday 8th March 2018</strong> <strong>Steve Jobs Hall, SNGIST</strong></div>
+                            <div class="last"><span>scroll down</span></div>
+                        </div>
+                    </div>
+                    <div class="preloaded-content">
+                        <p class="intro-text" id="intro_text"> Imagination is more important than knowledge. Share your best idea and be so good they cant ignore you. Come and Become the part of the 5th Inter College Presentation hosted by Computer Science and Engineering department of SNGIST.
+                        </p>
+                        <article class="info">
+                            <ul>
+                                <li id="first">
+                                    <h4>Date</h4>
+                                    <p>17<br>March</p>
+                                </li>
+                                <li>
+                                    <h4>Hour</h4>
+                                    <p>15.30 - 18.30<br></p>
+                                </li>
+                                <li>
+                                    <h4>Language</h4>
+                                    <p>English<br>Only</p>
+                                </li>
+                                <li id="sec">
+                                    <h4>Room</h4>
+                                    <p>Workshop<br>Room</p>
+                                </li>
+                                <li>
+                                    <h4>Duration</h4>
+                                    <p>3<br>Hours</p>
+                                </li>
+                                <li>
+                                    <h4>Price</h4>
+                                    <p>149<br>Euro</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="cta" id="hlo"><span></span></div>
+
+                        <div class="paragraphs">
+                            <article class="paragraph">
+                                <h4 class="is-visible">Rules</h4>
+                                <p class="is-visible">
+                                    <div class="list-type4">
+                                        <ol>
+                                            <li><a href="#">please Enter Your Content here.</a></li>
+                                            <li><a href="#">please Enter Your Content here.</a></li>
+                                            <li><a href="#">please Enter Your Content here.</a></li>
+                                        </ol>
+                                    </div>
+                                </p>
+                            </article>
+                        </div>
+                        <section class="gallery">
+                            <div class="gallery-box">
+                                <div class="image-gallery">
+                                    <article style="background-image:"></article>
+                                </div>
+                            </div>
+                            <div class="gallery-box">
+                                <div class="image-gallery">
+                                    <article style="background-image: "></article>
+                                </div>
+                            </div>
+                            <div class="gallery-box">
+                                <div class="image-gallery">
+                                    <article style="background-image:;"></article>
+                                </div>
+                            </div>
+                            <div class="gallery-box">
+                                <div class="image-gallery">
+                                    <article style="background-image: "></article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="last">
+
+                        </div>
+                        <div class="cta"><span><a data-v-5c05d8c6="" href="#workshop/business-design#">Share It</a></span></div>
+                        <footer><span>© 2017</span> <a href="http://ddd.it/" target="_blank">www.ddd.it</a> <a target="_blank" href="mailto:info@ddd.it">info@ddd.it</a></footer>
+                    </div>
+                </div>
+                <div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                    <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<script src=".assets/js/smooth-scrollbar.js"></script>
+<script>
+    var Scrollbar = window.Scrollbar;
+    var scrollbars = Scrollbar.init(document.querySelector('.content'));
+    var cta_fst = document.getElementById("hlo");
+    var li_sec = document.getElementById("sec");
+    var li_fst = document.getElementById("first");
+    var intro_text = document.getElementById('intro_text');
+    scrollbars.addListener(function(status) {
+        if (scrollbars.isVisible(cta_fst)) {
+            $(".cta").addClass("is-visible");
+        } else {
+
+            $(".cta").removeClass("is-visible");
+        }
+        if (scrollbars.isVisible(li_fst)) {
+            $(".info > ul > li").slice(0, 3).addClass("is-visible")
+        } else {
+
+            $(".info > ul > li").slice(0, 3).removeClass("is-visible")
+        }
+        if (scrollbars.isVisible(li_sec)) {
+            $(".info > ul > li").slice(3, 6).addClass("is-visible")
+        } else {
+
+            $(".info > ul > li").slice(3, 6).removeClass("is-visible")
+        }
+        if (scrollbars.isVisible(intro_text)) {
+            $(".intro-text").addClass("is-visible");
+        }
+    });
+</script>

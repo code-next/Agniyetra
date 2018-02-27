@@ -88,65 +88,65 @@
     <link rel="stylesheet" href="./assets/css/custom.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <link rel="stylesheet" href="./assets/css/angular-fancy-modal.css">
 
-    <div class="preloader" style="display: none;">
-        <img src="./Definity - Main Demo Onepage_files/loader.svg" alt="Loading..." style="display: none;">
-    </div>
-
-
-
-    <!-- ========== Navigation ========== -->
+    <body ng-controller="MyCtrl" ng-app="exampleApp">
+        <div class="preloader" style="display: none;">
+            <img src="./Definity - Main Demo Onepage_files/loader.svg" alt="Loading..." style="display: none;">
+        </div>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-    <script src="./assets/js/jquery.vide.js "></script>
-    <!-- ========== Hero Cover ========== -->
-
-    <!-- / .main-hero-2 -->
+        <!-- ========== Navigation ========== -->
 
 
-    <div id="home" class="agency2-hero">
-        <div class="bg-overlay">
 
-            <div id="large-header" class="large-header">
+        <!-- ========== Hero Cover ========== -->
 
-                <!-- Hero Content -->
-                <div class="hero-content-wrapper">
-                    <div class="hero-content">
+        <!-- / .main-hero-2 -->
 
-                        <h1 class="slogan">Agniyetra</h1>
-                        <h4 class="h-alt hero-secondary sub-logo">Web Design &amp; Development</h4>
 
-                        <!-- Scroller -->
-                        <a href="#about" class="scroller" style="z-index:10000">
-                            <span class="scroller-text">scroll down</span>
-                            <span class="linea-basic-magic-mouse"></span>
-                        </a>
+        <div id="home" class="agency2-hero">
+            <div class="bg-overlay">
 
+                <div id="large-header" class="large-header">
+
+                    <!-- Hero Content -->
+                    <div class="hero-content-wrapper">
+                        <div class="hero-content">
+
+                            <h1 class="slogan" ng-click="open()">Agniyetra</h1>
+                            <h4 class="h-alt hero-secondary sub-logo">Web Design &amp; Development</h4>
+
+                            <!-- Scroller -->
+                            <a href="#about" class="scroller" style="z-index:10000">
+                                <span class="scroller-text">scroll down</span>
+                                <span class="linea-basic-magic-mouse"></span>
+                            </a>
+
+                        </div>
+                        <!-- / .hero-content -->
+                        <div style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
+                        </div>
                     </div>
-                    <!-- / .hero-content -->
-                    <div style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
-                    </div>
+                    <!-- / .hero-content-wrapper -->
+
                 </div>
-                <!-- / .hero-content-wrapper -->
+                <!-- / #large-header -->
 
             </div>
-            <!-- / #large-header -->
-
+            <!-- / .bg-overlay -->
         </div>
-        <!-- / .bg-overlay -->
-    </div>
-    <!-- / #home -->
-    <section id="welcome" class="container">
+        <!-- / #home -->
+        <section id="welcome" class="container">
 
-        <div class="ws-l"></div>
-        <header class="sec-heading">
-            <h2>This year’s National Techno Cultural Fest will be held March 8-9</h2>
-        </header>
-        <div id="countdown-container" style="width: 80%;margin: -80px auto;max-width: 1160px;">
-            <countdown-timer>
-                <svg style="display:none" width="132px" height="132px" viewBox="0 0 132 132" version="1.1" class="style-scope countdown-timer">
+            <div class="ws-l"></div>
+            <header class="sec-heading" ng-click="open()">
+                <h2>This year’s National Techno Cultural Fest will be held March 8-9</h2>
+            </header>
+            <div id="countdown-container" style="width: 80%;margin: -80px auto;max-width: 1160px;">
+                <countdown-timer>
+                    <svg style="display:none" width="132px" height="132px" viewBox="0 0 132 132" version="1.1" class="style-scope countdown-timer">
 
                     <g id="Page-1" stroke="green" stroke-width="1" fill="red" fill-rule="evenodd" class="style-scope countdown-timer">
                         <g id="Artboard-1" stroke-width="4" stroke-linejoin="round" class="style-scope countdown-timer">
@@ -172,279 +172,279 @@
                         </g>
                     </g>
                 </svg>
-            </countdown-timer>
-        </div>
-    </section>
-
-    <div id="pricing" class="gray-bg">
-        <section class="container section team-3col">
-            <div class="row">
-
-                <header class="sec-heading">
-                    <h2>Meet the events</h2>
-                    <span class="subheading">We are creative professionals</span>
-                </header>
-
-
-                <!-- Member 1 -->
-                <div class="col-lg-6 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/project.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Light up your thought.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Inter College Project Presentation</h4>
-                            <span class="t-role"> &amp; </span>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/images/team-2.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Carol Greene</h4>
-                            <span class="t-role">Art Director</span>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/dhol.jpg" alt="Play Store" class="img-responsive"></img>
-
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Play Store</h4>
-                            <span class="t-role">Fun </span>
-                            <a href="#ds" style="text-decoration: none">Know more</a>
-                            <div style="height: 10px"></div>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-            </div>
-            <!-- / .row -->
-            <div style="height:30px;"></div>
-            <div class="row">
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
-                            <div class="t-description">
-                                <h4 class="h-alt">Play Store</h4>
-                                <p>etur dolor adipisicing elit. Architecto aliquam voluptas doloribus maiores sit.</p>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Play Store</h4>
-                            <span class="t-role">Fun </span>
-                            <a href="#ds" style="text-decoration: none">Know more</a>
-                            <div style="height: 10px"></div>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 3 -->
-                <div class="col-lg-3 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/images/team-3.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Tyler Owens</h4>
-                            <span class="t-role">Lead Designer</span>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-                <div class="col-lg-6 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/images/team-1.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Philip Lee</h4>
-                            <span class="t-role">CEO &amp; Founder</span>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
+                </countdown-timer>
             </div>
         </section>
-    </div>
-    <!-- / .gray-bg -->
-    <section class="container section pricing-tables">
 
-        <header class="sec-heading ws-s">
-            <h2>About Us</h2>
-            <span class="subheading">SNGIST Group of Institutions</span>
-        </header>
+        <div id="pricing" class="gray-bg">
+            <section class="container section team-3col">
+                <div class="row">
+
+                    <header class="sec-heading">
+                        <h2>Meet the events</h2>
+                        <span class="subheading">We are creative professionals</span>
+                    </header>
 
 
-        <blockquote style="color:#444444; margin-top:-80px;font-size:15px; text-align: justify; text-justify: inter-word">
-            <footer>
-                <cite>
+                    <!-- Member 1 -->
+                    <div class="col-lg-6 col-md-6 mb-sm-50">
+                        <div ng-click="open()" class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/image/project.jpg" alt="Team Member" class="img-responsive">
+                                <div class="t-description">
+                                    <div class="content-wrapper">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p>Light up your thought.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Inter College Project Presentation</h4>
+                                <span class="t-role"> &amp; </span>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                    <!-- / .col-md-4 -->
+
+
+                    <!-- Member 2 -->
+                    <div class="col-lg-3 col-md-6 mb-sm-50">
+                        <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/images/team-2.jpg" alt="Team Member" class="img-responsive">
+                                <div class="t-description">
+                                    <div class="content-wrapper">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Carol Greene</h4>
+                                <span class="t-role">Art Director</span>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                    <!-- / .col-md-4 -->
+
+
+                    <!-- Member 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/image/dhol.jpg" alt="Play Store" class="img-responsive"></img>
+
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Play Store</h4>
+                                <span class="t-role">Fun </span>
+                                <a href="#ds" style="text-decoration: none">Know more</a>
+                                <div style="height: 10px"></div>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                    <!-- / .col-md-4 -->
+
+
+                </div>
+                <!-- / .row -->
+                <div style="height:30px;"></div>
+                <div class="row">
+                    <!-- Member 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div ng-click="open()" class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
+                                <div class="t-description">
+                                    <h4 class="h-alt">Play Store</h4>
+                                    <p>etur dolor adipisicing elit. Architecto aliquam voluptas doloribus maiores sit.</p>
+                                </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Play Store</h4>
+                                <span class="t-role">Fun </span>
+                                <a href="#ds" style="text-decoration: none">Know more</a>
+                                <div style="height: 10px"></div>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                    <!-- / .col-md-4 -->
+
+
+                    <!-- Member 3 -->
+                    <div class="col-lg-3 col-md-6 mb-sm-50">
+                        <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/images/team-3.jpg" alt="Team Member" class="img-responsive">
+                                <div class="t-description">
+                                    <div class="content-wrapper">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Tyler Owens</h4>
+                                <span class="t-role">Lead Designer</span>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                    <!-- / .col-md-4 -->
+                    <div class="col-lg-6 col-md-6 mb-sm-50">
+                        <div class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+
+                            <!-- Image -->
+                            <div class="t-image">
+                                <img src="assets/images/team-1.jpg" alt="Team Member" class="img-responsive">
+                                <div class="t-description">
+                                    <div class="content-wrapper">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="t-info">
+                                <h4 class="t-name">Philip Lee</h4>
+                                <span class="t-role">CEO &amp; Founder</span>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- / .t-item -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- / .gray-bg -->
+        <section class="container section pricing-tables">
+
+            <header class="sec-heading ws-s">
+                <h2>About Us</h2>
+                <span class="subheading">SNGIST Group of Institutions</span>
+            </header>
+
+
+            <blockquote style="color:#444444; margin-top:-80px;font-size:15px; text-align: justify; text-justify: inter-word">
+                <footer>
+                    <cite>
                     <h5 class="alt" style="color:#444444; font-size: 18px; margin-bottom:20px;">About College</h5>
                 </cite>
-            </footer>
-            <span class="et-quote t-type"></span> SNGIST Group Of Institutions established in the year 2003 is a centre of excellence in the field of professional education .SNGIST is affiliated to Kerala Technological University (KTU) from 2015 and is
-            also approved by All India Council for Technical Education (AICTE), New Delhi and it is an ISO 9001:2015 certified institution. SNGIST offers MBA, MCA, DDMCA, LMCA, M.Sc,BCA,B.Com,BBA,B.Sc,M.Comand B-Tech in five branches (ME, CE, EC, EEE
-            and CSE).
+                </footer>
+                <span class="et-quote t-type"></span> SNGIST Group Of Institutions established in the year 2003 is a centre of excellence in the field of professional education .SNGIST is affiliated to Kerala Technological University (KTU) from 2015 and
+                is also approved by All India Council for Technical Education (AICTE), New Delhi and it is an ISO 9001:2015 certified institution. SNGIST offers MBA, MCA, DDMCA, LMCA, M.Sc,BCA,B.Com,BBA,B.Sc,M.Comand B-Tech in five branches (ME, CE, EC,
+                EEE and CSE).
 
-        </blockquote>
-        <blockquote style="color:#444444; margin-top:10px;font-size:15px;  text-align: justify; text-justify: inter-word">
-            <footer>
-                <cite>
+            </blockquote>
+            <blockquote style="color:#444444; margin-top:10px;font-size:15px;  text-align: justify; text-justify: inter-word">
+                <footer>
+                    <cite>
                     <h4 class="h-alt" style="color:#444444; font-size: 18px;  margin-bottom:20px;">About Department</h4>
                     <h5 style="color:#444444"></h5>
                 </cite>
-            </footer>
-            <span class="et-quote t-type"></span>The 4 year B.Tech program enables a prospective student to acquire the knowledge,skill and attitude to succeed as an Engineer or Scientist in the industry built on computational Technology.The department
-            has experienced significant growth overthese years with a team of faculty members who are strong in theory,systems,computer graphics,multimedia,programming languages,computer security,artificial intelligence and computer networks.
+                </footer>
+                <span class="et-quote t-type"></span>The 4 year B.Tech program enables a prospective student to acquire the knowledge,skill and attitude to succeed as an Engineer or Scientist in the industry built on computational Technology.The department
+                has experienced significant growth overthese years with a team of faculty members who are strong in theory,systems,computer graphics,multimedia,programming languages,computer security,artificial intelligence and computer networks.
 
 
-        </blockquote>
-
-
-
-    </section>
-    <!-- / .container -->
+            </blockquote>
 
 
 
-    <!-- ========== Contact ========== -->
-
-    <footer id="contact" class="footer-contact" style="height: 80%">
-        <div class="container-fluid" style="padding-top:200px">
-            <div class="row">
-
-                <!-- Map and address -->
-                <div class="col-lg-6 no-gap contact-info">
-
-                    <!-- Show Info Button -->
-                    <a href="#" class="show-info-link"><i class="fa fa-info"></i>Show info</a>
-
-                    <div id="map-canvas" class="footer-map"></div>
+        </section>
+        <!-- / .container -->
 
 
 
-                </div>
-                <!-- / .col-lg-6 -->
+        <!-- ========== Contact ========== -->
+
+        <footer id="contact" class="footer-contact" style="height: 80%">
+            <div class="container-fluid" style="padding-top:200px">
+                <div class="row">
+
+                    <!-- Map and address -->
+                    <div class="col-lg-6 no-gap contact-info">
+
+                        <!-- Show Info Button -->
+                        <a href="#" class="show-info-link"><i class="fa fa-info"></i>Show info</a>
+
+                        <div id="map-canvas" class="footer-map"></div>
 
 
-                <!-- Contact Form -->
-                <div class="col-lg-6 no-gap contact-info">
 
-                    <!-- Show Info Button -->
+                    </div>
+                    <!-- / .col-lg-6 -->
 
-                    <div id="map-canva" class="footer-map"></div>
 
-                    <address class="contact-info-wrapper">
+                    <!-- Contact Form -->
+                    <div class="col-lg-6 no-gap contact-info">
+
+                        <!-- Show Info Button -->
+
+                        <div id="map-canva" class="footer-map"></div>
+
+                        <address class="contact-info-wrapper">
                             <header class="sec-heading" style="margin-top:-20px">
                                     <h2  style="color: #fff">Contact</h2>
                                     <span class="subheading" style="text-transform: unset">SNGIST Group of Institutions</span>
@@ -476,62 +476,70 @@
                           
                         </address>
 
-                </div>
-                <!-- / .col-lg-6 -->
-
-            </div>
-            <!-- / .row -->
-        </div>
-        <!-- / .container-fluid -->
-
-
-        <!-- Social Links -->
-        <div class="dark-bg">
-            <div class="container footer-social-links">
-                <div class="row">
-
-                    <ul>
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">SNGIST</a></li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- / .container -->
-        </div>
-        <!-- / .dark-bg -->
-
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <small>&copy; 2018 Aginyetra. Made with  <img src="./assets/image/heart.png" alt="" height="20px" width="20px"> By Raison & Nijinsha </small>
                     </div>
-
-                    <div class="col-md-6">
-                        <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
-                    </div>
+                    <!-- / .col-lg-6 -->
 
                 </div>
                 <!-- / .row -->
             </div>
-            <!-- / .container -->
-        </div>
-        <!-- / .copyright -->
-    </footer>
-    <!-- / .footer-contact -->
+            <!-- / .container-fluid -->
 
 
-    <!-- ========== Scripts ========== -->
+            <!-- Social Links -->
+            <div class="dark-bg">
+                <div class="container footer-social-links">
+                    <div class="row">
+
+                        <ul>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">SNGIST</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- / .container -->
+            </div>
+            <!-- / .dark-bg -->
+
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <small>&copy; 2018 Aginyetra. Made with  <img src="./assets/image/heart.png" alt="" height="20px" width="20px"> By Raison & Nijinsha </small>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+                        </div>
+
+                    </div>
+                    <!-- / .row -->
+                </div>
+                <!-- / .container -->
+            </div>
+            <!-- / .copyright -->
+        </footer>
+        <!-- / .footer-contact -->
+
+
+        <!-- ========== Scripts ========== -->
 
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="./assets/js/angular-fancy-modal.min.js"></script>
 
     <script src="./assets/js/smooth-scrollbar.js "></script>
     <script src="./assets/js/TweenMax.js "></script>
     <script src="./assets/js/countdown.js "></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7mRwfVc9h46ZNwqKNaWIpbdTWysVQIU"></script>
+
+    <script src="./assets/js/jquery.vide.js "></script>
+
+
 
 
     <script>
@@ -543,7 +551,6 @@
         countDown.attachEvents();
         countDown.play(false);
     </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7mRwfVc9h46ZNwqKNaWIpbdTWysVQIU&callback=initMap"></script>
     <script type="text/javascript">
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
@@ -692,6 +699,21 @@
                 title: 'SNGIST Group of Institutions'
             });
         }
+    </script>
+
+    <script>
+        var app = angular.module('exampleApp', ['vesparny.fancyModal']);
+
+        var Scrollbar = window.Scrollbar;
+        app.controller('MyCtrl', function($scope, $fancyModal) {
+            $scope.open = function() {
+                $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'project.html'
+                });
+            };
+
+        });
     </script>
 
 </html>
