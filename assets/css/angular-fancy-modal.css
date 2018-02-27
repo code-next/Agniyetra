@@ -7,6 +7,7 @@
  * @license MIT
  */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 [data-scrollbar],
 [scrollbar],
 scrollbar {
@@ -319,12 +320,16 @@ body.fancymodal-open {
     width: 100%;
     height: 100%;
     display: block;
-    overflow: hidden
+    overflow: hidden;
+    font-family: Roboto;
+    text-transform: none;
 }
 
 .content {
     width: 100%;
-    padding: 0 10px
+    padding: 0 10px;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 @media (min-width:62em) {
@@ -340,7 +345,9 @@ body.fancymodal-open {
     display: flex;
     height: 95vh;
     padding: 25vh 0;
-    padding-top: 40px
+    padding-top: 40px;
+    font-family: Roboto;
+    text-transform: none;
 }
 
 @media (min-width:62em) {
@@ -352,8 +359,10 @@ body.fancymodal-open {
 .intro .last {
     color: #3edfcd;
     text-transform: uppercase;
-    font-size: .75rem;
-    margin: 20px 0
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 .intro-content {
@@ -364,7 +373,9 @@ body.fancymodal-open {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
-    flex-flow: column
+    flex-flow: column;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 @media (min-width:62em) {
@@ -385,11 +396,15 @@ body.fancymodal-open {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 .header>div {
     width: 100%;
-    text-align: right
+    text-align: right;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 @media (min-width:62em) {
@@ -401,10 +416,11 @@ body.fancymodal-open {
 }
 
 .workshop-name {
-    font-family: sans-serif;
+    font-family: Roboto;
     font-size: 2rem;
     line-height: 1.04167em;
-    font-weight: 200
+    font-weight: 200;
+    text-transform: none;
 }
 
 @media (min-width:62em) {
@@ -415,7 +431,8 @@ body.fancymodal-open {
 
 .workshop-name {
     margin: 0;
-    color: #444444
+    color: #444444;
+    text-transform: none;
 }
 
 @media (min-width:62em) {
@@ -427,7 +444,9 @@ body.fancymodal-open {
 .middle {
     font-size: .875rem;
     line-height: 1.58333em;
-    margin: 20px 0
+    margin: 20px 0;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 @media (min-width:62em) {
@@ -439,7 +458,9 @@ body.fancymodal-open {
 
 .middle span {
     color: #686868;
-    font-size: .875rem
+    font-size: .875rem;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 .middle h2 {
@@ -458,14 +479,14 @@ body.fancymodal-open {
 .bottom {
     color: black;
     font-weight: 200;
-    font-style: italic;
-    font-size: .875rem;
-    line-height: 1.42857em
+    font-size: .975rem;
+    line-height: 1.42857em;
+    font-family: Roboto;
 }
 
 @media (min-width:62em) {
     .bottom {
-        font-size: 1.25rem;
+        font-size: 1.45rem;
         line-height: 1.6em
     }
 }
@@ -473,6 +494,7 @@ body.fancymodal-open {
 .bottom strong {
     display: block;
     color: #666666;
+    font-family: Roboto;
 }
 
 .avatar-container {
@@ -540,12 +562,14 @@ body.fancymodal-open {
     transform: translate3d(0, 30px, 0);
     opacity: 0;
     transition: all .4s ease-out .2s;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.78571em;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
     margin: 0;
-    padding: 5vh 0
+    padding: 5vh 0;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 .intro-text.is-visible {
@@ -559,7 +583,7 @@ body.fancymodal-open {
         max-width: 750px;
         margin: 0 auto;
         padding: 10vh 0;
-        font-size: 1.25rem
+        font-size: 1.85rem
     }
 }
 
@@ -584,7 +608,9 @@ body.fancymodal-open {
     flex-flow: row wrap;
     list-style: none;
     text-align: center;
-    padding: 0
+    padding: 0;
+    text-transform: none;
+    font-family: Roboto;
 }
 
 .info li {
@@ -596,13 +622,15 @@ body.fancymodal-open {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    margin: 20px 0
+    margin: 20px 0;
+    font-family: Roboto;
+    text-transform: none;
 }
 
 .info li.is-visible {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    opacity: 1
+    opacity: 1;
 }
 
 @media (min-width:62em) {
@@ -613,33 +641,41 @@ body.fancymodal-open {
 
 .info h4 {
     color: #8367d8;
-    font-weight: 200;
-    margin: 0
+    font-weight: 400;
+    margin: 0;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
 .info p {
     font-weight: 300;
     color: #444444;
-    margin: 8px
+    margin: 8px;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .info h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 1.45833em;
-    font-weight: 400
+    font-weight: 400;
+    text-transform: none;
 }
 
 @media (min-width:62em) {
     .info h4 {
-        font-size: 1.5rem
+        font-size: 1.8rem
     }
 }
 
 .paragraphs {
     display: block;
     width: 100%;
-    height: 520px;
+    height: 620;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width:62em) {
@@ -666,7 +702,7 @@ body.fancymodal-open {
     opacity: 0;
     transition: all .8s ease-out .2s;
     color: #585858;
-    font-size: 1.85rem;
+    font-size: 2.2rem;
     font-weight: 200;
 }
 
@@ -676,27 +712,36 @@ body.fancymodal-open {
     opacity: 1
 }
 
-.paragraph p {
+.paragraph .list {
     -webkit-transform: translate3d(0, 30px, 0);
     transform: translate3d(0, 30px, 0);
     opacity: 0;
     transition: all .4s ease-out .2s;
     line-height: 1.64286em;
-    padding: 10px;
+    padding: 5px;
     width: 900px;
+    color: #444444;
+    font-size: 1.9rem;
+    margin-top: 32px;
+    font-family: Roboto;
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .paragraph p {
+    .paragraph .list {
         width: 100%;
     }
 }
 
-.paragraph p.is-visible {
+.paragraph .list.is-visible {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1
+}
+
+ul.flat-list li {
+    line-height: 4rem;
+    font-family: Roboto;
 }
 
 .gallery {
