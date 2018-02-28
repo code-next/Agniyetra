@@ -14,7 +14,7 @@ h1.ttile {
     text-align: center
 }
 
-.slogan {
+.agency2-hero .hero-content-wrapper .hero-content .hero-lead {
     font-family: 'Ananda Namaste';
     color: #ffffff;
     font-size: 15rem;
@@ -26,7 +26,27 @@ h1.ttile {
     border-image-slice: 1; */
 }
 
-.welcome-text {
+.contact-info .contact-info-wrapper {
+    padding: 0px;
+}
+
+.contact-info .contact-info-wrapper .contact-group {
+    font-size: 15px;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.contact-info .contact-info-wrapper .contact-group.v {
+    margin-left: 30px
+}
+
+@media (max-width: 770px) {
+    .contact-info .contact-info-wrapper .contact-group.v {
+        margin-left: 50px
+    }
+}
+
+:nth-child(2) .welcome-text {
     text-align: center;
     font-size: 1.2em;
     position: relative;
@@ -53,9 +73,6 @@ h1.ttile {
 }
 
 .header-back {
-    position: absolute;
-    text-align: center;
-    top: 50%;
     margin: 0px;
     padding: 0px;
 }

@@ -896,7 +896,7 @@
     .fs-video-hero .hero-content-wrapper .hero-content .hero-lead,
     .fw-video-hero .hero-content-wrapper .hero-content .hero-lead,
     .freelancer-hero .hero-content-wrapper .hero-content .hero-lead {
-        font-size: 4em;
+        font-size: 10em;
     }
     .main-demo-hero .hero-content-wrapper .hero-content .hero-subheading,
     .fs-video-hero .hero-content-wrapper .hero-content .hero-subheading,
@@ -1008,7 +1008,7 @@
         padding-left: 0;
     }
     .agency2-hero .hero-content-wrapper .hero-content .hero-lead {
-        font-size: 3em;
+        font-size: 5em;
     }
     .agency2-hero .hero-content-wrapper .hero-content .hero-secondary {
         letter-spacing: 10px;

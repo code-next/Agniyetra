@@ -88,7 +88,7 @@ IOWA.CountdownTimer.Band.prototype.fade = function(t) {
 IOWA.CountdownTimer.Band.prototype.onChangeComplete = function(t) {
     t.fadeTimer = setTimeout(function() {
         //  t.fade("out")
-    }, 100000 + 1e3 * Math.random())
+    }, 1000 + 1e3 * Math.random())
 };
 IOWA.CountdownTimer.Band.prototype.setQuality = function(t) {
     this.quality = t, this.needsRedraw = !0
@@ -140,7 +140,7 @@ IOWA.CountdownTimer.Band.prototype.redraw = function() {
     this.needsRedraw = !0
 };
 IOWA.CountdownTimer.Band.prototype.renderFlat = function() {
-    //this.colors[0].size = 0, this.colors[1].size = 0, this.colors[2].size = 0, this.colors[3].size = 0, this.colors[4].size = 0, this.colors[5].size = 1, this.needsRedraw = !0
+    this.colors[0].size = 0, this.colors[1].size = 0, this.colors[2].size = 0, this.colors[3].size = 0, this.colors[4].size = 0, this.colors[5].size = 1, this.needsRedraw = !0
 };
 IOWA.CountdownTimer.Band.prototype.stopPlaying = function() {
     this.renderFlat(), this.isPlaying = !1
@@ -409,7 +409,7 @@ IOWA.CountdownTimer.Core.prototype.getLayout = function() {
     }
 };
 IOWA.CountdownTimer.Core.prototype.onResize = function() {
-    this.needsCanvasReset = !0
+    this.needsCanvasReset = !0;
 };
 IOWA.CountdownTimer.Core.prototype.resetCanvas = function() {
     if (!this.drawAll) {

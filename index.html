@@ -89,7 +89,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <link rel="stylesheet" href="./assets/css/angular-fancy-modal.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <body ng-controller="MyCtrl" ng-app="exampleApp">
         <div class="preloader" style="display: none;">
@@ -108,44 +108,40 @@
 
 
         <div id="home" class="agency2-hero">
+
+            <div id="fs-video-one-bg" class="player" style="z-index:-1;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
+            </div>
             <div class="bg-overlay">
 
+                <!-- Hero Content -->
                 <div id="large-header" class="large-header">
 
                     <!-- Hero Content -->
                     <div class="hero-content-wrapper">
                         <div class="hero-content">
-
-                            <h1 class="slogan" ng-click="open()">Agniyetra</h1>
-                            <h4 class="h-alt hero-secondary sub-logo">Web Design &amp; Development</h4>
-
-                            <!-- Scroller -->
-                            <a href="#about" class="scroller" style="z-index:10000">
-                                <span class="scroller-text">scroll down</span>
-                                <span class="linea-basic-magic-mouse"></span>
-                            </a>
-
+                            <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; ">Agniyetra</h1>
+                            <h4 class="h-alt hero-secondary sub-logo">National Techno-Cultural Fest</h4>
                         </div>
                         <!-- / .hero-content -->
-                        <div style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
+                        <div class="player" style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
                         </div>
                     </div>
                     <!-- / .hero-content-wrapper -->
 
                 </div>
-                <!-- / #large-header -->
 
             </div>
             <!-- / .bg-overlay -->
         </div>
-        <!-- / #home -->
-        <section id="welcome" class="container">
+        <!-- / .fs-video-hero -->
 
-            <div class="ws-l"></div>
-            <header class="sec-heading" ng-click="open()">
+        <!-- / #home -->
+        <section id="welcome" class="container section">
+
+            <header class="sec-heading">
                 <h2>This year’s National Techno Cultural Fest will be held March 8-9</h2>
             </header>
-            <div id="countdown-container" style="width: 80%;margin: -80px auto;max-width: 1160px;">
+            <div id="countdown-container" style="width: 80%; margin:-80px auto;max-width: 1160px;">
                 <countdown-timer>
                     <svg style="display:none" width="132px" height="132px" viewBox="0 0 132 132" version="1.1" class="style-scope countdown-timer">
 
@@ -175,10 +171,11 @@
                 </svg>
                 </countdown-timer>
             </div>
+
         </section>
 
         <div id="pricing" class="gray-bg" style="background: #eeeeef">
-            <section class="container section team-3col">
+            <section class="container section team-3col" id="events">
                 <div class="row">
 
                     <header class="sec-heading">
@@ -189,7 +186,7 @@
 
                     <!-- Member 1 -->
                     <div class="col-lg-6 col-md-6 mb-sm-50">
-                        <div ng-click="open()" class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+                        <div class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
 
                             <!-- Image -->
                             <div class="t-image">
@@ -197,7 +194,10 @@
                                 <div class="t-description">
                                     <div class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
-                                        <p>Light up your thought.
+                                        <p style="color: #444">Light up your thoughts. DO you have an awesome idea in your hand..? We offer you a great stage to present your idea. Welcome to the 5th Inter College Project Presentation hosted by Computer Science &amp; Engineering
+                                            of SNGIST Group of Institutions.Come along and share your idea.
+                                            <a ng-click="open()" href="#picaso">Know more</a><br>
+                                            <a href="#picaso" target="">To Register</a>
                                         </p>
                                     </div>
                                 </div>
@@ -206,13 +206,8 @@
                             <!-- Info -->
                             <div class="t-info">
                                 <h4 class="t-name">Inter College Project Presentation</h4>
-                                <span class="t-role"> &amp; </span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
+                                <span class="t-role">Price Worth </span>
+
                             </div>
 
                         </div>
@@ -229,10 +224,10 @@
                             <div class="t-image">
                                 <img src="assets/images/team-2.jpg" alt="Team Member" class="img-responsive">
                                 <div class="t-description">
-                                    <div class="content-wrapper">
+                                    <div class="content-wrapper" ng-click="openRoute()">
                                         <h4 class="h-alt">Hello!</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                            ea commodo consequat.
+                                        <p style="color: #444">Artists, we have a canvas for you. The celebrations of colours. Be here to show the artist in you.
+                                            <a href="#picaso">Know more</a>
                                         </p>
                                     </div>
                                 </div>
@@ -240,14 +235,9 @@
 
                             <!-- Info -->
                             <div class="t-info">
-                                <h4 class="t-name">Carol Greene</h4>
-                                <span class="t-role">Art Director</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
+                                <h4 class="t-name">Route - Picasso</h4>
+                                <span class="t-role">Price Worth 1.5K</span>
+
                             </div>
 
                         </div>
@@ -262,16 +252,15 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/image/dhol.jpg" alt="Play Store" class="img-responsive"></img>
+                                <img src="assets/image/d.jpg" alt="Play Store" class="img-responsive"></img>
 
                             </div>
 
                             <!-- Info -->
                             <div class="t-info">
-                                <h4 class="t-name">Play Store</h4>
-                                <span class="t-role">Fun </span>
-                                <a href="#ds" style="text-decoration: none">Know more</a>
-                                <div style="height: 10px"></div>
+                                <h4 class="t-name">Rave Vibes</h4>
+                                <div style="height: 8px"></div>
+                                <a href="#rave" ng-click="openRave()" style="text-decoration: none">Know more</a>
                             </div>
 
                         </div>
@@ -286,7 +275,7 @@
                 <div class="row">
                     <!-- Member 2 -->
                     <div class="col-lg-3 col-md-6">
-                        <div ng-click="open()" class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
+                        <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
 
                             <!-- Image -->
                             <div class="t-image">
@@ -300,9 +289,8 @@
                             <!-- Info -->
                             <div class="t-info">
                                 <h4 class="t-name">Play Store</h4>
-                                <span class="t-role">Fun </span>
+                                <div style="height: 8px"></div>
                                 <a href="#ds" style="text-decoration: none">Know more</a>
-                                <div style="height: 10px"></div>
                             </div>
 
                         </div>
@@ -321,8 +309,8 @@
                                 <div class="t-description">
                                     <div class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                            ea commodo consequat.
+                                        <p>Is there any <b>Gamers</b> out there. Show how good you are with the <b>Racing</b>. Bet your will and win them all
+                                            <a href="#game">Know more</a>
                                         </p>
                                     </div>
                                 </div>
@@ -330,14 +318,9 @@
 
                             <!-- Info -->
                             <div class="t-info">
-                                <h4 class="t-name">Tyler Owens</h4>
-                                <span class="t-role">Lead Designer</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
+                                <h4 class="t-name">Let's Race</h4>
+                                <span class="t-role">Price Worth K</span>
+
                             </div>
 
                         </div>
@@ -349,12 +332,13 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/images/team-1.jpg" alt="Team Member" class="img-responsive">
+                                <img src="assets/image/short.jpg" alt="Team Member" class="img-responsive">
                                 <div class="t-description">
-                                    <div class="content-wrapper">
+                                    <div ng-click="openProject()" class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                            ea commodo consequat.
+                                        <p>Imagination is more important and the knowledge. Open your Creativity and make it real. Capture your <b>Dream &amp; Imagination</b> and bring to us. We have some price waiting for you
+                                            <a href="#movie">Know more</a><br>
+                                            <a href="#picaso" target="">To Register</a>
                                         </p>
                                     </div>
                                 </div>
@@ -362,14 +346,8 @@
 
                             <!-- Info -->
                             <div class="t-info">
-                                <h4 class="t-name">Philip Lee</h4>
-                                <span class="t-role">CEO &amp; Founder</span>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
+                                <h4 class="t-name">48HR ShortFilm Making</h4>
+                                <span class="t-role">Price Woeth 10K</span>
                             </div>
 
                         </div>
@@ -452,26 +430,26 @@
                             </header>
                           <ul>
                             <!-- Address -->
-                            <li class="contact-group">
+                            <li class="contact-group v">
                               <span class="adr-heading">Address</span>
-                              <span class="adr-info">100 Street, Il, US</span>
+                              <span class="adr-info">Manjaly, N Paravur</span>
                             </li>
                             <!-- Email -->
-                            <li class="contact-group">
+                            <li class="contact-group v">
                               <span class="adr-heading">Email</span>
-                              <span class="adr-info">sayhello@email.com</span>
+                              <span class="adr-info">sngist@sngist.org</span>
                             </li>
                           </ul>
                           <ul>
                             <!-- Phone -->
                             <li class="contact-group">
                               <span class="adr-heading">Phone</span>
-                              <span class="adr-info">+ 123 4567 890</span>
+                              <span class="adr-info">0484 2440 220</span>
                             </li>
                             <!-- Mobile -->
                             <li class="contact-group">
-                              <span class="adr-heading">Mobile</span>
-                              <span class="adr-info">+ 123 4567 890</span>
+                              <span class="adr-heading">Fax</span>
+                              <span class="adr-info">0484 2440 299</span>
                             </li>
                           </ul>                  
                           
@@ -551,6 +529,8 @@
         countDown.setUp(false);
         countDown.attachEvents();
         countDown.play(false);
+
+        $('.fancymodal .fancymodal-close').hide();
     </script>
     <script type="text/javascript">
         // When the window has finished loading create our google map below
@@ -708,12 +688,29 @@
         var Scrollbar = window.Scrollbar;
         app.controller('MyCtrl', function($scope, $fancyModal) {
             $scope.open = function() {
-                $fancyModal.open({
+                var modl = $fancyModal.open({
                     // template: temp + tosp + middle + bottom + close
                     templateUrl: 'project.html'
                 });
             };
-
+            $scope.openProject = function() {
+                var modl = $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'shortfilm.html'
+                });
+            };
+            $scope.openRoute = function() {
+                var modl = $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'route.html'
+                });
+            };
+            $scope.openRave = function() {
+                var modl = $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'rave.html'
+                });
+            };
         });
     </script>
 
