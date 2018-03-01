@@ -152,8 +152,8 @@
     </script>
 
     <body ng-controller="MyCtrl" ng-app="exampleApp" id="hi">
-        <div class="preloader" style="display: one;">
-            <img src="./assets/svg/puff.svg" alt="Loading..." style="display: one;">
+        <div class="preloader" style="display: none;">
+            <img src="./assets/svg/puff.svg" alt="Loading..." style="display: none;">
         </div>
 
 
@@ -179,7 +179,7 @@
                 <div class="hero-content-wrapper">
                     <div class="hero-content">
                         <img src="assets/image/vega.png" alt="Vega" style="top:10px">
-                        <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; font-size:14rem">Agniyetra</h1>
+                        <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal;">Agniyetra</h1>
                         <h4 class="h-alt hero-secondary sub-logo">National Techno-Cultural Fest 2K18</h4>
                     </div>
                     <!-- / .hero-content -->
@@ -348,7 +348,7 @@
                             <div class="t-image">
                                 <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
                                 <div class="t-description">
-                                    <div class="content-wrapper" ng-click="openRoute()">
+                                    <div class="content-wrapper" ng-click="openPlay()">
                                         <h4 class="h-alt">Hello!</h4>
                                         <p style="color: #444">Be cool and chill. It time for some fun. Play store is fun game stores
                                             <a href="#picaso">Know more</a>
@@ -360,8 +360,7 @@
                             <!-- Info -->
                             <div class="t-info">
                                 <h4 class="t-name">Play Store</h4>
-                                <div style="height: 8px"></div>
-                                <a href="#store" ng-click="openPlay()" style="text-decoration: none">Know more</a>
+                                <span class="t-role">Fun Games</span>
                             </div>
 
                         </div>
@@ -794,4 +793,4 @@
         });
     </script>
 
-</html>;
+</html>
