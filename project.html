@@ -57,7 +57,6 @@
                                 </li>
                             </ul>
                         </article>
-                        <div class="cta" id="hlo"><span></span></div>
 
                         <div class="paragraphs">
                             <article class="paragraph">
@@ -105,28 +104,19 @@
 <script>
     var Scrollbar = window.Scrollbar;
     var scrollbars = Scrollbar.init(document.querySelector('.content'));
-    var cta_fst = document.getElementById("hlo");
     var li_sec = document.getElementById("sec");
     var li_fst = document.getElementById("first");
     var intro_text = document.getElementById('intro_text');
+    var delay = 0;
     scrollbars.addListener(function(status) {
-        if (scrollbars.isVisible(cta_fst)) {
-            $(".cta").addClass("is-visible");
-        } else {
 
-            $(".cta").removeClass("is-visible");
-        }
-        if (scrollbars.isVisible(li_fst)) {
-            $(".info > ul > li").slice(0, 3).addClass("is-visible")
-        } else {
-
-            $(".info > ul > li").slice(0, 3).removeClass("is-visible")
-        }
         if (scrollbars.isVisible(li_sec)) {
-            $(".info > ul > li").slice(3, 6).addClass("is-visible")
-        } else {
-
-            $(".info > ul > li").slice(3, 6).removeClass("is-visible")
+            $('.info > ul > li').each(function() {
+                var $li = $(this);
+                setTimeout(function() {
+                    $li.addClass('is-visible');
+                }, delay += 100); // delay 100 ms
+            });
         }
         if (scrollbars.isVisible(intro_text)) {
             $(".intro-text").addClass("is-visible");
