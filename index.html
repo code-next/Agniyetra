@@ -73,6 +73,55 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%)
         }
+        
+        .homepage-hero-module {
+            border-right: none;
+            border-left: none;
+            position: absolute;
+        }
+        
+        .no-video .video-container video,
+        .touch .video-container video {
+            display: none;
+        }
+        
+        .no-video .video-container .poster,
+        .touch .video-container .poster {
+            display: block !important;
+        }
+        
+        .video-container {
+            position: relative;
+            bottom: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .video-container .poster img {
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+        }
+        
+        .video-container .filter {
+            z-index: 100;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.4);
+            width: 100%;
+        }
+        
+        .video-container video {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+        }
+        
+        .video-container video.fillWidth {
+            width: 100%;
+        }
     </style>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -90,6 +139,11 @@
 
     <link rel="stylesheet" href="./assets/css/angular-fancy-modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="./assets/js/jquery.lazyloadxt.js"></script>
+    <script src="./assets/js/TweenMax.js "></script>
+    <script src="./assets/js/countdown.js "></script>
 
     <body ng-controller="MyCtrl" ng-app="exampleApp">
         <div class="preloader" style="display: none;">
@@ -97,40 +151,38 @@
         </div>
 
 
-
-        <!-- ========== Navigation ========== -->
-
-
-
-        <!-- ========== Hero Cover ========== -->
-
-        <!-- / .main-hero-2 -->
-
-
         <div id="home" class="agency2-hero">
-
-            <div id="fs-video-one-bg" class="player" style="z-index:-1;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
+            <div class="homepage-hero-module">
+                <div class="video-container">
+                    <div id="fs-video-one-bg" class="filter player"></div>
+                    <video autoplay loop class="fillWidth">
+                                                <source data-src="video/Fire-Snow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                                                <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                                            </video>
+                    <div class="poster hidden">
+                        <img src="./video/Fire-Snow.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="bg-overlay">
+
+
+            <!-- Hero Content -->
+            <div id="large-header" class="large-header">
 
                 <!-- Hero Content -->
-                <div id="large-header" class="large-header">
-
-                    <!-- Hero Content -->
-                    <div class="hero-content-wrapper">
-                        <div class="hero-content">
-                            <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; ">Agniyetra</h1>
-                            <h4 class="h-alt hero-secondary sub-logo">National Techno-Cultural Fest</h4>
-                        </div>
-                        <!-- / .hero-content -->
-                        <div class="player" style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
-                        </div>
+                <div class="hero-content-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; ">Agniyetra</h1>
+                        <h4 class="h-alt hero-secondary sub-logo">National Techno-Cultural Fest</h4>
                     </div>
-                    <!-- / .hero-content-wrapper -->
-
+                    <!-- / .hero-content -->
+                    <div class="player" style="width: 100%; height: 710px; z-index:-1; position: absolute; ;padding:0px; left:0;" id="hello" data-vide-bg="video/Fire-Snow" data-vide-options="loop: true, muted: false, position: 0% 0%">
+                    </div>
                 </div>
+                <!-- / .hero-content-wrapper -->
 
             </div>
+
             <!-- / .bg-overlay -->
         </div>
         <!-- / .fs-video-hero -->
@@ -190,14 +242,16 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/image/project.jpg" alt="Team Member" class="img-responsive">
+                                <img src="assets/image/p.jpg" alt="Team Member" class="img-responsive">
                                 <div class="t-description">
                                     <div class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
                                         <p style="color: #444">Light up your thoughts. DO you have an awesome idea in your hand..? We offer you a great stage to present your idea. Welcome to the 5th Inter College Project Presentation hosted by Computer Science &amp; Engineering
                                             of SNGIST Group of Institutions.Come along and share your idea.
                                             <a ng-click="open()" href="#picaso">Know more</a><br>
-                                            <a href="#picaso" target="">To Register</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYp4YEN472OufH12EFIHpmyZHRyNnNggu6N1IATpsgownrog/viewform?usp=pp_url&entry.1066850529&entry.2117492509&entry.1692675515&entry.175478674&entry.1547063567&entry.1261733821&entry.1633872478&entry.1924596749&entry.344988095&entry.74745242&entry.1353822192&entry.1929692872&entry.440608665
+                                            " target="_blank" style="font-size:15px">Register Now</a>
+
                                         </p>
                                     </div>
                                 </div>
@@ -222,7 +276,7 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/images/team-2.jpg" alt="Team Member" class="img-responsive">
+                                <img src="assets/image/painting.jpg" alt="Route to Picasso" class="img-responsive">
                                 <div class="t-description">
                                     <div class="content-wrapper" ng-click="openRoute()">
                                         <h4 class="h-alt">Hello!</h4>
@@ -252,7 +306,7 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/image/d.jpg" alt="Play Store" class="img-responsive"></img>
+                                <img src="assets/image/rave.jpg" alt="Rave Vibes" class="img-responsive"></img>
 
                             </div>
 
@@ -290,7 +344,7 @@
                             <div class="t-info">
                                 <h4 class="t-name">Play Store</h4>
                                 <div style="height: 8px"></div>
-                                <a href="#ds" style="text-decoration: none">Know more</a>
+                                <a href="#store" ng-click="openPlay()" style="text-decoration: none">Know more</a>
                             </div>
 
                         </div>
@@ -305,12 +359,12 @@
 
                             <!-- Image -->
                             <div class="t-image">
-                                <img src="assets/images/team-3.jpg" alt="Team Member" class="img-responsive">
+                                <img src="assets/image/race.jpg" alt="Team Member" class="img-responsive">
                                 <div class="t-description">
                                     <div class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
                                         <p>Is there any <b>Gamers</b> out there. Show how good you are with the <b>Racing</b>. Bet your will and win them all
-                                            <a href="#game">Know more</a>
+                                            <a ng-click="openRace()" href="#game">Know more</a>
                                         </p>
                                     </div>
                                 </div>
@@ -334,11 +388,11 @@
                             <div class="t-image">
                                 <img src="assets/image/short.jpg" alt="Team Member" class="img-responsive">
                                 <div class="t-description">
-                                    <div ng-click="openProject()" class="content-wrapper">
+                                    <div class="content-wrapper">
                                         <h4 class="h-alt">Hello!</h4>
                                         <p>Imagination is more important and the knowledge. Open your Creativity and make it real. Capture your <b>Dream &amp; Imagination</b> and bring to us. We have some price waiting for you
-                                            <a href="#movie">Know more</a><br>
-                                            <a href="#picaso" target="">To Register</a>
+                                            <a ng-click="openProject()" href="#movie">Know more</a><br>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1vdMDM1z2u_22kfjagG5Doo3E9liNz2Le6YzHK7QDyfQvVg/viewform?usp=pp_url&entry.1420214200&entry.1245869554&entry.1501041058&entry.457421910&entry.1466787173&entry.1839533997&entry.129874028" target="_blank">Register Now</a>
                                         </p>
                                     </div>
                                 </div>
@@ -470,8 +524,8 @@
                     <div class="row">
 
                         <ul>
-                            <li><a href="#">facebook</a></li>
-                            <li><a href="#">SNGIST</a></li>
+                            <li><a href="www.facebook.com/">facebook</a></li>
+                            <li><a href="www.sngist.org">SNGIST</a></li>
                         </ul>
 
                     </div>
@@ -507,15 +561,9 @@
         <!-- ========== Scripts ========== -->
 
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
     <script src="./assets/js/angular-fancy-modal.min.js"></script>
-
     <script src="./assets/js/smooth-scrollbar.js "></script>
-    <script src="./assets/js/TweenMax.js "></script>
-    <script src="./assets/js/countdown.js "></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7mRwfVc9h46ZNwqKNaWIpbdTWysVQIU"></script>
-
     <script src="./assets/js/jquery.vide.js "></script>
 
 
@@ -528,9 +576,7 @@
         );
         countDown.setUp(false);
         countDown.attachEvents();
-        countDown.play(false);
-
-        $('.fancymodal .fancymodal-close').hide();
+        countDown.play(false); //jQuery is required to run this code
     </script>
     <script type="text/javascript">
         // When the window has finished loading create our google map below
@@ -709,6 +755,18 @@
                 var modl = $fancyModal.open({
                     // template: temp + tosp + middle + bottom + close
                     templateUrl: 'rave.html'
+                });
+            };
+            $scope.openPlay = function() {
+                var modl = $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'playstore.html'
+                });
+            };
+            $scope.openRace = function() {
+                var modl = $fancyModal.open({
+                    // template: temp + tosp + middle + bottom + close
+                    templateUrl: 'race.html'
                 });
             };
         });

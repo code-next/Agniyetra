@@ -465,7 +465,7 @@ body.fancymodal-open {
 
 .middle h2 {
     color: #8367d8;
-    font-size: 1.25rem;
+    font-size: 2.50rem;
     margin: 5px 0
 }
 
@@ -482,6 +482,15 @@ body.fancymodal-open {
     font-size: .975rem;
     line-height: 1.42857em;
     font-family: Roboto;
+}
+
+.bottom h4.name {
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.bottom span {
+    font-size: 15px;
 }
 
 @media (min-width:62em) {
@@ -552,7 +561,7 @@ body.fancymodal-open {
     right: 0;
     bottom: 0;
     display: block;
-    background: #3edfcd;
+    background: #e0e0e0;
     z-index: 1;
     mix-blend-mode: multiply
 }
