@@ -104,9 +104,7 @@
     var li_fst = document.getElementById("first");
     var intro_text = document.getElementById('intro_text');
     scrollbars.addListener(function(status) {
-        if (scrollbars.isVisible(cta_fst)) {
-            $(".cta").addClass("is-visible");
-        }
+
         if (scrollbars.isVisible(li_fst)) {
             $(".info > ul > li").slice(0, 3).addClass("is-visible")
         }
