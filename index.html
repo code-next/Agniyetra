@@ -131,7 +131,7 @@
 
     <!-- Favicon -->
     <!-- Bootstrap -->
-    <link rel="icon" type="image/png" href="./assets/image/heart.png" />
+    <link rel="icon" type="image/png" href="./assets/image/black.png" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
@@ -178,7 +178,8 @@
                 <!-- Hero Content -->
                 <div class="hero-content-wrapper">
                     <div class="hero-content">
-                        <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; ">Agniyetra</h1>
+                        <img src="assets/image/vega.png" alt="Vega" style="top:10px">
+                        <h1 class="hero-lead slogan" style="font-family:'Ananda Namaste'; letter-spacing: normal; font-size:14rem">Agniyetra</h1>
                         <h4 class="h-alt hero-secondary sub-logo">National Techno-Cultural Fest 2K18</h4>
                     </div>
                     <!-- / .hero-content -->
@@ -308,19 +309,25 @@
 
                     <!-- Member 2 -->
                     <div class="col-lg-3 col-md-6">
-                        <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
+                        <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
 
                             <!-- Image -->
                             <div class="t-image">
                                 <img src="assets/image/rave.jpg" alt="Rave Vibes" class="img-responsive"></img>
-
+                                <div class="t-description">
+                                    <div class="content-wrapper" ng-click="openRave()">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p style="color: #444">Nach Baliye. Its Nasic Dhol Festival. We welcome all the Nasic Dhol Teams
+                                            <a href="#picaso">Know more</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Info -->
                             <div class="t-info">
                                 <h4 class="t-name">Rave Vibes</h4>
-                                <div style="height: 8px"></div>
-                                <a href="#rave" ng-click="openRave()" style="text-decoration: none">Know more</a>
+                                <span class="t-role">Prize Worth 10K</span>
                             </div>
 
                         </div>
@@ -335,14 +342,18 @@
                 <div class="row">
                     <!-- Member 2 -->
                     <div class="col-lg-3 col-md-6">
-                        <div class="t-join wow fadeIn" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeIn;">
+                        <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
 
                             <!-- Image -->
                             <div class="t-image">
                                 <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
                                 <div class="t-description">
-                                    <h4 class="h-alt">Play Store</h4>
-                                    <p>etur dolor adipisicing elit. Architecto aliquam voluptas doloribus maiores sit.</p>
+                                    <div class="content-wrapper" ng-click="openRoute()">
+                                        <h4 class="h-alt">Hello!</h4>
+                                        <p style="color: #444">Be cool and chill. It time for some fun. Play store is fun game stores
+                                            <a href="#picaso">Know more</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -783,4 +794,4 @@
         });
     </script>
 
-</html>
+</html>;
