@@ -136,6 +136,29 @@ body.fancymodal-open {
     left: 0;
 }
 
+.fancymodal .fancymodal-overlay::-webkit-scrollbar-track {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s ease-out, background .5s ease-out;
+    background: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.fancymodal .fancymodal-overlay::-webkit-scrollbar-track:hover {
+    opacity: 1
+}
+
+.fancymodal .fancymodal-overlay::-webkit-scrollbar {
+    width: 0px;
+}
+
+.fancymodal .fancymodal-overlay::-webkit-scrollbar-thumb {
+    background: #212121;
+}
+
 .fancymodal .fancymodal-content {
     max-width: 80%;
     max-height: 120%;

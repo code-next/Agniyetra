@@ -4109,6 +4109,10 @@ fieldset[disabled] .form-control:hover {
     color: #999;
 }
 
+.ft-item .ft-content p {
+    color: #444;
+}
+
 .ft-cards-2 .ft-card-item .ft-content .link-btn {
     display: inline-block;
     margin-top: 30px;
@@ -14554,6 +14558,9 @@ form .input-error-2:focus {
 .table-row-highlight tbody tr:nth-child(even) {
     background: #f8f8f8;
 }
+
+
+/*# sourceMappingURL=main.css.map */
 
 
 /*# sourceMappingURL=main.css.map */

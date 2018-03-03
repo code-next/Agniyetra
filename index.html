@@ -6,26 +6,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style type="text/css">
-        .gm-style .gm-style-mtc label,
-        .gm-style .gm-style-mtc div {
-            font-weight: 400
-        }
-    </style>
-    <style type="text/css">
-        /* Set a size for our map container, the Google Map will take up 100% of this container */
-        
-        #map {
-            width: 750px;
-            height: 500px;
-        }
-    </style>
-    <style type="text/css">
-        .gm-style .gm-style-cc span,
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-mtc div {
-            font-size: 10px
-        }
-        
         countdown-timer {
             display: inline-block;
             width: 100%;
@@ -33,126 +13,8 @@
             text-align: center;
             overflow: hidden;
         }
-        
-        @font-face {
-            font-family: 'Ananda Namaste';
-            font-weight: bold;
-            src: url('../fonts/Ananda_Namaste.ttf');
-        }
     </style>
-    <style type="text/css">
-        @media print {
-            .gm-style .gmnoprint,
-            .gmnoprint {
-                display: none
-            }
-        }
-        
-        @media screen {
-            .gm-style .gmnoscreen,
-            .gmnoscreen {
-                display: none
-            }
-        }
-        
-        .gm-style-pbc {
-            transition: opacity ease-in-out;
-            background-color: rgba(0, 0, 0, 0.45);
-            text-align: center
-        }
-        
-        .gm-style-pbt {
-            font-size: 22px;
-            color: white;
-            font-family: Roboto, Arial, sans-serif;
-            position: relative;
-            margin: 0;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%)
-        }
-        
-        .homepage-hero-module {
-            border-right: none;
-            border-left: none;
-            position: absolute;
-        }
-        
-        .no-video .video-container video,
-        .touch .video-container video {
-            display: none;
-        }
-        
-        .no-video .video-container .poster,
-        .touch .video-container .poster {
-            display: block !important;
-        }
-        
-        .video-container {
-            position: relative;
-            bottom: 0%;
-            left: 0%;
-            height: 100vh;
-            width: auto;
-            overflow: hidden;
-            background: #000;
-        }
-        
-        .video-container .poster img {
-            width: 100%;
-            bottom: 0;
-            position: absolute;
-        }
-        
-        .video-container .filter {
-            z-index: 100;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.4);
-            width: 100%;
-        }
-        
-        .video-container video {
-            position: absolute;
-            z-index: 0;
-            bottom: 0;
-        }
-        
-        .video-container video.fillWidth {
-            width: 100%;
-        }
-        
-        #style-4::-webkit-scrollbar-track {
-            opacity: 0;
-            z-index: 1;
-            transition: opacity .5s ease-out, background .5s ease-out;
-            background: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none
-        }
-        
-        #style-4::-webkit-scrollbar-track:hover {
-            opacity: 1
-        }
-        
-        #style-4::-webkit-scrollbar {
-            width: 2px;
-            opacity: 0;
-            z-index: 1;
-            transition: opacity .5s ease-out, background .5s ease-out;
-            background: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none
-        }
-        
-        #style-4::-webkit-scrollbar-thumb {
-            background: #212121;
-        }
-    </style>
+
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Agniyetra</title>
@@ -171,6 +33,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.lazyloadxt.js"></script>
     <script src="./assets/js/TweenMax.js "></script>
     <script src="./assets/js/countdown.js "></script>
@@ -267,235 +130,309 @@
 
     </section>
 
-    <div id="pricing" class="gray-bg" style="background: #eeeeef">
-        <section class="container section team-3col" id="events">
+    <div class="gray-bg">
+        <section class="container section ft-x ">
             <div class="row">
+
                 <header class="sec-heading">
-                    <h2>Meet the events</h2>
-                    <span class="subheading">We are creative professionals</span>
+                    <h2>The Support For Army</h2>
+                    <span class="subheading">We share, What we earn</span>
                 </header>
 
 
-                <!-- Member 1 -->
-                <div class="col-lg-6 col-md-6 mb-sm-50">
-                    <div ng-click="open()" class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".8s">
 
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/p.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p style="color: #444">Light up your thoughts. DO you have an awesome idea in your hand..? We offer you a great stage to present your idea. Welcome to the 5th Inter College Project Presentation hosted by Computer Science &amp; Engineering
-                                        of SNGIST Group of Institutions.Come along and share your idea.
-                                        <a href="#project" style="font-size: 16px">Know more</a><br>
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYp4YEN472OufH12EFIHpmyZHRyNnNggu6N1IATpsgownrog/viewform?usp=pp_url&entry.1066850529&entry.2117492509&entry.1692675515&entry.175478674&entry.1547063567&entry.1261733821&entry.1633872478&entry.1924596749&entry.344988095&entry.74745242&entry.1353822192&entry.1929692872&entry.440608665
-                                            " target="_blank" style="font-size:16px">Register Now</a>
+                    <!-- white space -->
 
-                                    </p>
-                                </div>
-                            </div>
+                    <!-- Material right aligned - Item 1 -->
+                    <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                        <div class="ft-content">
+                            <h5>The Nation</h5>
+                            <p>This nation will remain the land of the free, only so long as it is the home of the brave</p>
                         </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Inter College Project Presentation</h4>
-                            <span class="t-role">Prize Worth 7K</span>
-
+                        <div class="ft-icon">
+                            <i class="fa fa-flag"></i>
                         </div>
+                    </div>
+                    <!-- / .ft-item -->
+
+                    <!-- Material right aligned - Item 2 -->
+                    <div class="col-md-12 no-gap ws-s ft-item ft-material right-align">
+                        <div class="ft-content">
+                            <h5>The Love</h5>
+                            <p>A soldier doesn't fight, because he hates what is in front of him, He fights because he LOVES what he left behind.</p>
+                        </div>
+                        <div class="ft-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                    </div>
+                    <!-- / .ft-item -->
+
+                </div>
+                <!-- / .col-lg-4 -->
+
+                <!-- Center Image -->
+                <!-- Center Image -->
+                <div class="col-lg-4">
+                    <div class="cam-army">
+                        <h1>#We</h1>
+                        <h2>Support</h2>
+                        <h1 class="sec">Indian</h1>
+                        <h2 class="sec" style="letter-spacing:1rem">Army</h2>
+                    </div>
+                </div>
+
+                <!-- Features Left -->
+                <div class="col-lg-4 wow fadeInRight reduce" data-wow-duration=".8s">
+                    <div class="col-md-12 no-gap ws-s ft-item ft-material">
+                        <i class="fa fa-flag"></i>
+                        <h5>The Flag</h5>
+                        <p>Our flag does not fly because the wind moves it; It flies with the last breath of each soldier who died protecting it</p>
 
                     </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6 mb-sm-50">
-                    <div ng-click="openRoute()" class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/painting.jpg" alt="Route to Picasso" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p style="color: #444">Artists, we have a canvas for you. The celebrations of colours. Be here to show the artist in you.
-                                        <a href="#" style="font-size:16px">Know more</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Route - Picasso</h4>
-                            <span class="t-role">Prize Worth 1.5K</span>
-
-                        </div>
+                    <!-- / .ft-item -->
+                    <!-- Item 3 -->
+                    <div class="col-md-12 no-gap ft-item ft-material">
+                        <i class="fa fa-star"></i>
+                        <h5>The Courage</h5>
+                        <p>Being a soldier is more than courage it's sacrificing yourself for something greater than yourself </p>
 
                     </div>
-                    <!-- / .t-item -->
+
                 </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/rave.jpg" alt="Rave Vibes" class="img-responsive"></img>
-                            <div class="t-description">
-                                <div class="content-wrapper" ng-click="openRave()">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p style="color: #444">Nach Baliye. Its Nasic Dhol Festival. We welcome all the Nasic Dhol Teams
-                                        <a href="#" style="font-size:16px">Know more</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Rave Vibes</h4>
-                            <span class="t-role">Prize Worth 10K</span>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
+                <!-- / .col-lg-4 -->
 
             </div>
             <!-- / .row -->
-            <div style="height:30px;"></div>
-            <div class="row">
-                <!-- Member 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
-                            <div class="t-description">
-                                <div class="content-wrapper" ng-click="openPlay()">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p style="color: #444">Be cool and chill. It time for some fun. Play store is fun game stores
-                                        <a href="#picaso" style="font-size:16px">Know more</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Play Store</h4>
-                            <span class="t-role">Fun Games</span>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-
-
-                <!-- Member 3 -->
-                <div class="col-lg-3 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/race.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Is there any <b>Gamers</b> out there. Show how good you are with the <b>Racing</b>. Bet your will and win them all
-                                        <a ng-click="openRace()" style="font-size:16px" href="#game">Know more</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">Let's Race</h4>
-                            <span class="t-role">Bet &amp; Race</span>
-
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-                <!-- / .col-md-4 -->
-                <div class="col-lg-6 col-md-6 mb-sm-50">
-                    <div class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
-
-                        <!-- Image -->
-                        <div class="t-image">
-                            <img src="assets/image/short.jpg" alt="Team Member" class="img-responsive">
-                            <div class="t-description">
-                                <div class="content-wrapper">
-                                    <h4 class="h-alt">Hello!</h4>
-                                    <p>Imagination is more important and the knowledge. Open your Creativity and make it real. Capture your <b>Dream &amp; Imagination</b> and bring to us. We have some Prize waiting for you
-                                        <a style="font-size:16px" ng-click="openProject()" href="#movie">Know more</a><br>
-                                        <a style="font-size:16px" href="https://docs.google.com/forms/d/e/1FAIpQLSf1vdMDM1z2u_22kfjagG5Doo3E9liNz2Le6YzHK7QDyfQvVg/viewform?usp=pp_url&entry.1420214200&entry.1245869554&entry.1501041058&entry.457421910&entry.1466787173&entry.1839533997&entry.129874028"
-                                            target="_blank">Register Now</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Info -->
-                        <div class="t-info">
-                            <h4 class="t-name">48HR ShortFilm Making</h4>
-                            <span class="t-role">Prize Worth 10K</span>
-                        </div>
-
-                    </div>
-                    <!-- / .t-item -->
-                </div>
-            </div>
         </section>
     </div>
+    <section class="container section team-3col" id="events">
+        <div class="row">
+            <header class="sec-heading">
+                <h2>Meet the events</h2>
+                <span class="subheading">We are creative professionals</span>
+            </header>
+
+
+            <!-- Member 1 -->
+            <div class="col-lg-6 col-md-6 mb-sm-50">
+                <div ng-click="open()" class="t-item wow fadeIn limit-height" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/p.jpg" alt="Team Member" class="img-responsive">
+                        <div class="t-description">
+                            <div class="content-wrapper">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p style="color: #444">Light up your thoughts. DO you have an awesome idea in your hand..? We offer you a great stage to present your idea. Welcome to the 5th Inter College Project Presentation hosted by Computer Science &amp; Engineering of
+                                    SNGIST Group of Institutions.Come along and share your idea.
+                                    <a href="#project" style="font-size: 16px">Know more</a><br>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYp4YEN472OufH12EFIHpmyZHRyNnNggu6N1IATpsgownrog/viewform?usp=pp_url&entry.1066850529&entry.2117492509&entry.1692675515&entry.175478674&entry.1547063567&entry.1261733821&entry.1633872478&entry.1924596749&entry.344988095&entry.74745242&entry.1353822192&entry.1929692872&entry.440608665
+                                            " target="_blank" style="font-size:16px">Register Now</a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">Inter College Project Presentation</h4>
+                        <span class="t-role">Prize Worth 7K</span>
+
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+            <!-- / .col-md-4 -->
+
+
+            <!-- Member 2 -->
+            <div class="col-lg-3 col-md-6 mb-sm-50">
+                <div ng-click="openRoute()" class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/painting.jpg" alt="Route to Picasso" class="img-responsive">
+                        <div class="t-description">
+                            <div class="content-wrapper">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p style="color: #444">Artists, we have a canvas for you. The celebrations of colours. Be here to show the artist in you.
+                                    <a href="#" style="font-size:16px">Know more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">Route - Picasso</h4>
+                        <span class="t-role">Prize Worth 1.5K</span>
+
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+            <!-- / .col-md-4 -->
+
+
+            <!-- Member 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/rave.jpg" alt="Rave Vibes" class="img-responsive"></img>
+                        <div class="t-description">
+                            <div class="content-wrapper" ng-click="openRave()">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p style="color: #444">Nach Baliye. Its Nasic Dhol Festival. We welcome all the Nasic Dhol Teams
+                                    <a href="#" style="font-size:16px">Know more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">Rave Vibes</h4>
+                        <span class="t-role">Prize Worth 10K</span>
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+            <!-- / .col-md-4 -->
+
+
+        </div>
+        <!-- / .row -->
+        <div style="height:30px;"></div>
+        <div class="row">
+            <!-- Member 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/play.jpg" alt="Play Store" class="img-responsive"></img>
+                        <div class="t-description">
+                            <div class="content-wrapper" ng-click="openPlay()">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p style="color: #444">Be cool and chill. It time for some fun. Play store is fun game stores
+                                    <a href="#picaso" style="font-size:16px">Know more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">Play Store</h4>
+                        <span class="t-role">Fun Games</span>
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+            <!-- / .col-md-4 -->
+
+
+            <!-- Member 3 -->
+            <div class="col-lg-3 col-md-6 mb-sm-50">
+                <div class="t-item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/race.jpg" alt="Team Member" class="img-responsive">
+                        <div class="t-description">
+                            <div class="content-wrapper">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p>Is there any <b>Gamers</b> out there. Show how good you are with the <b>Racing</b>. Bet your will and win them all
+                                    <a ng-click="openRace()" style="font-size:16px" href="#game">Know more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">Let's Race</h4>
+                        <span class="t-role">Bet &amp; Race</span>
+
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+            <!-- / .col-md-4 -->
+            <div class="col-lg-6 col-md-6 mb-sm-50">
+                <div class="t-item wow fadeIn limit-height" data-wow-duration="1" data-wow-delay="1.8s" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+
+                    <!-- Image -->
+                    <div class="t-image">
+                        <img src="assets/image/short.jpg" alt="Team Member" class="img-responsive">
+                        <div class="t-description">
+                            <div class="content-wrapper">
+                                <h4 class="h-alt">Hello!</h4>
+                                <p>Imagination is more important and the knowledge. Open your Creativity and make it real. Capture your <b>Dream &amp; Imagination</b> and bring to us. We have some Prize waiting for you
+                                    <a style="font-size:16px" ng-click="openProject()" href="#movie">Know more</a><br>
+                                    <a style="font-size:16px" href="https://docs.google.com/forms/d/e/1FAIpQLSf1vdMDM1z2u_22kfjagG5Doo3E9liNz2Le6YzHK7QDyfQvVg/viewform?usp=pp_url&entry.1420214200&entry.1245869554&entry.1501041058&entry.457421910&entry.1466787173&entry.1839533997&entry.129874028"
+                                        target="_blank">Register Now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="t-info">
+                        <h4 class="t-name">48HR ShortFilm Making</h4>
+                        <span class="t-role">Prize Worth 10K</span>
+                    </div>
+
+                </div>
+                <!-- / .t-item -->
+            </div>
+        </div>
+    </section>
     <!-- / .gray-bg -->
-    <section class="container section pricing-tables">
+    <div class="gray-bg">
+        <section class="container section pricing-tables">
 
-        <header class="sec-heading ws-s">
-            <h2>About Us</h2>
-            <span class="subheading">SNGIST Group of Institutions</span>
-        </header>
+            <header class="sec-heading ws-s">
+                <h2>About Us</h2>
+                <span class="subheading">SNGIST Group of Institutions</span>
+            </header>
 
 
-        <blockquote style="color:#444444; margin-top:-80px;font-size:15px; text-align: justify; text-justify: inter-word">
-            <footer>
-                <cite>
+            <blockquote class="wow fadeInLeft" data-wow-duration=".8s" style="color:#444444; margin-top:-80px;font-size:15px; text-align: justify; text-justify: inter-word">
+                <footer>
+                    <cite>
                     <h5 class="alt" style="color:#444444; font-size: 18px; margin-bottom:20px;">About College</h5>
                 </cite>
-            </footer>
-            <span class="et-quote t-type"></span> SNGIST Group Of Institutions established in the year 2003 is a centre of excellence in the field of professional education .SNGIST is affiliated to Kerala Technological University (KTU) from 2015 and is
-            also approved by All India Council for Technical Education (AICTE), New Delhi and it is an ISO 9001:2015 certified institution. SNGIST offers MBA, MCA, DDMCA, LMCA, M.Sc,BCA,B.Com,BBA,B.Sc,M.Comand B-Tech in five branches (ME, CE, EC, EEE
-            and CSE).
+                </footer>
+                <span class="et-quote t-type"></span> SNGIST Group Of Institutions established in the year 2003 is a centre of excellence in the field of professional education .SNGIST is affiliated to Kerala Technological University (KTU) from 2015 and
+                is also approved by All India Council for Technical Education (AICTE), New Delhi and it is an ISO 9001:2015 certified institution. SNGIST offers MBA, MCA, DDMCA, LMCA, M.Sc,BCA,B.Com,BBA,B.Sc,M.Comand B-Tech in five branches (ME, CE, EC,
+                EEE and CSE).
 
-        </blockquote>
-        <blockquote style="color:#444444; margin-top:10px;font-size:15px;  text-align: justify; text-justify: inter-word">
-            <footer>
-                <cite>
+            </blockquote>
+            <blockquote class="wow fadeInRight" data-wow-duration=".8s" style="color:#444444; margin-top:10px;font-size:15px;  text-align: justify; text-justify: inter-word">
+                <footer>
+                    <cite>
                     <h4 class="h-alt" style="color:#444444; font-size: 18px;  margin-bottom:20px;">About Department</h4>
                     <h5 style="color:#444444"></h5>
                 </cite>
-            </footer>
-            <span class="et-quote t-type"></span>The 4 year B.Tech program enables a prospective student to acquire the knowledge,skill and attitude to succeed as an Engineer or Scientist in the industry built on computational Technology.The department
-            has experienced significant growth overthese years with a team of faculty members who are strong in theory, systems, computer graphics, multimedia, programming languages, computer security, artificial intelligence and computer networks.
+                </footer>
+                <span class="et-quote t-type"></span>The 4 year B.Tech program enables a prospective student to acquire the knowledge,skill and attitude to succeed as an Engineer or Scientist in the industry built on computational Technology.The department
+                has experienced significant growth overthese years with a team of faculty members who are strong in theory, systems, computer graphics, multimedia, programming languages, computer security, artificial intelligence and computer networks.
 
 
-        </blockquote>
-
-
-
-    </section>
+            </blockquote>
+        </section>
+    </div>
     <!-- / .container -->
 
 
@@ -614,7 +551,8 @@
 
 
 
-
+<link rel="stylesheet" href="./assets/css/animate.css">
+<script src="./assets/js/wow.min.js"></script>
 <script>
     var countDown = new IOWA.CountdownTimer.Core(
         new Date("2018-03-08T10:00:00+05:30"),
@@ -630,7 +568,7 @@
         }, 1000);
     });
     var Scrollbar = window.Scrollbar;
-    var scrollbars = Scrollbar.initAll();
+    new WOW().init();
 </script>
 <script type="text/javascript">
     // When the window has finished loading create our google map below

@@ -203,3 +203,119 @@ scrollbar .overscroll-glow {
     -o-filter: blur(0.5px);
     filter: blur(0.5px);
 } */
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: absolute;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+#style-4::-webkit-scrollbar-track {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s ease-out, background .5s ease-out;
+    background: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#style-4::-webkit-scrollbar-track:hover {
+    opacity: 1
+}
+
+#style-4::-webkit-scrollbar {
+    width: 2px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s ease-out, background .5s ease-out;
+    background: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#style-4::-webkit-scrollbar-thumb {
+    background: #212121;
+}
+
+.cam-army {
+    background: url("../image/mil.jpg") no-repeat center center;
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: text;
+}
+
+.cam-army h1 {
+    font-size: 15.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.cam-army h1.sec {
+    font-size: 8.5rem;
+}
+
+.cam-army h2 {
+    font-size: 6.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cam-army h2.sec {
+    font-size: 6.4rem;
+}

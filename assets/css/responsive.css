@@ -1,43 +1,3 @@
-/* --------------------------------------------------
-	Responsive Styles - Media queries
--------------------------------------------------- */
-
-
-/* --------------------------------------------------
-	0.1 Settigns
--------------------------------------------------- */
-
-
-/* ---- Colors ---- */
-
-
-/* ---- Label Colors ---- */
-
-
-/* ---- Text ---- */
-
-
-/* ---- White Space ---- */
-
-
-/* ---- Buttons ---- */
-
-
-/* ---- Forms ---- */
-
-
-/* ---- Navigation ---- */
-
-
-/* ---- Footer ---- */
-
-
-/* ---- Other ---- */
-
-
-/* ---- Media Queries Breakpoints ---- */
-
-
 /* ---- General ---- */
 
 @media (max-width: 1260px) {
@@ -1187,4 +1147,26 @@
 }
 
 
-/*# sourceMappingURL=responsive.css.map */
+/* cam-army */
+
+@media (max-width: 992px) {
+    .cam-army {
+        background-size: 780px;
+        background-attachment: unset;
+    }
+}
+
+@media (max-width: 480px) {
+    .cam-army h1 {
+        font-size: 11.4rem;
+    }
+    .cam-army h1.sec {
+        font-size: 6.3rem;
+    }
+    .cam-army h2 {
+        font-size: 4.7rem;
+    }
+    .cam-army h2.sec {
+        font-size: 5.3rem;
+    }
+}
