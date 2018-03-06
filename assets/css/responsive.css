@@ -1149,10 +1149,27 @@
 
 /* cam-army */
 
+@media (max-width: 1160px) {
+    .cam-army {
+        background: url("../image/mil.jpg") no-repeat center center;
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: 1670px;
+        background-attachment: unset;
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 992px) {
     .cam-army {
+        background: url("../image/mil.jpg") no-repeat center center;
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         background-size: 780px;
         background-attachment: unset;
+        margin-bottom: 32px;
     }
 }
 
@@ -1168,5 +1185,20 @@
     }
     .cam-army h2.sec {
         font-size: 5.3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cam-army h1 {
+        font-size: 11.1rem;
+    }
+    .cam-army h1.sec {
+        font-size: 6.0rem;
+    }
+    .cam-army h2 {
+        font-size: 4.4rem;
+    }
+    .cam-army h2.sec {
+        font-size: 5rem;
     }
 }
